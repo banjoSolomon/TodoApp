@@ -1,5 +1,9 @@
 package org.solomon11.response;
 
+import lombok.Data;
+
+@Data
 public class LoginUserResponse {
-    private
+    private String username;
+    private String id;
 }

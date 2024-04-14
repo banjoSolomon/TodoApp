@@ -4,18 +4,74 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="996c441a-502e-469d-9d52-0a0ba631b7c3" name="Changes" comment="" />
+    <list default="true" id="996c441a-502e-469d-9d52-0a0ba631b7c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/DeleteTodolistRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/EditTodolistRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/LogoutRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/MarkTaskPriorityRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/MarkTaskRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/TodolistRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/exceptions/InvalidLoginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/exceptions/InvalidUsernameOrPassword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/exceptions/RegistrationCantBeEmpty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/exceptions/TaskNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/exceptions/TaskTitleNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/exceptions/UserExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/exceptions/UsernameNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/models/TaskStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/models/TodoList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/repository/TodoListsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/repository/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/DeleteTodoListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/EditTodolistUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/LoginUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/LogoutUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/MarkTaskResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/RegisterUserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/TodoListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/utilities/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/solomon11/repository/UsersTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/solomon11/services/UserServiceImplTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2eSNjitMz137ylajiJSt8YnBTiq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -24,15 +80,199 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "HTTP Request.generated-requests | #104.executor": "Run",
+    "HTTP Request.generated-requests | #105.executor": "Run",
+    "HTTP Request.generated-requests | #106.executor": "Run",
+    "HTTP Request.generated-requests | #107.executor": "Run",
+    "HTTP Request.generated-requests | #108.executor": "Run",
+    "HTTP Request.generated-requests | #23.executor": "Run",
+    "HTTP Request.generated-requests | #25.executor": "Run",
+    "HTTP Request.generated-requests | #26.executor": "Run",
+    "HTTP Request.generated-requests | #29.executor": "Run",
+    "HTTP Request.generated-requests | #3.executor": "Run",
+    "HTTP Request.generated-requests | #35.executor": "Run",
+    "HTTP Request.generated-requests | #36.executor": "Run",
+    "HTTP Request.generated-requests | #37.executor": "Run",
+    "HTTP Request.generated-requests | #38.executor": "Run",
+    "HTTP Request.generated-requests | #39.executor": "Run",
+    "HTTP Request.generated-requests | #40.executor": "Run",
+    "HTTP Request.generated-requests | #42.executor": "Run",
+    "HTTP Request.generated-requests | #43.executor": "Run",
+    "HTTP Request.generated-requests | #44.executor": "Run",
+    "HTTP Request.generated-requests | #45.executor": "Run",
+    "HTTP Request.generated-requests | #46.executor": "Run",
+    "HTTP Request.generated-requests | #47.executor": "Run",
+    "HTTP Request.generated-requests | #48.executor": "Run",
+    "HTTP Request.generated-requests | #49.executor": "Run",
+    "HTTP Request.generated-requests | #5.executor": "Run",
+    "HTTP Request.generated-requests | #50.executor": "Run",
+    "HTTP Request.generated-requests | #51.executor": "Run",
+    "HTTP Request.generated-requests | #53.executor": "Run",
+    "HTTP Request.generated-requests | #6.executor": "Run",
+    "HTTP Request.generated-requests | #64.executor": "Run",
+    "HTTP Request.generated-requests | #65.executor": "Run",
+    "HTTP Request.generated-requests | #66.executor": "Run",
+    "HTTP Request.generated-requests | #67.executor": "Run",
+    "HTTP Request.generated-requests | #68.executor": "Run",
+    "HTTP Request.generated-requests | #69.executor": "Run",
+    "HTTP Request.generated-requests | #7.executor": "Run",
+    "HTTP Request.generated-requests | #70.executor": "Run",
+    "HTTP Request.generated-requests | #71.executor": "Run",
+    "HTTP Request.generated-requests | #72.executor": "Run",
+    "HTTP Request.generated-requests | #73.executor": "Run",
+    "HTTP Request.generated-requests | #74.executor": "Run",
+    "HTTP Request.generated-requests | #75.executor": "Run",
+    "HTTP Request.generated-requests | #76.executor": "Run",
+    "HTTP Request.generated-requests | #77.executor": "Run",
+    "HTTP Request.generated-requests | #78.executor": "Run",
+    "HTTP Request.generated-requests | #79.executor": "Run",
+    "HTTP Request.generated-requests | #8.executor": "Run",
+    "HTTP Request.generated-requests | #80.executor": "Run",
+    "HTTP Request.generated-requests | #81.executor": "Run",
+    "HTTP Request.generated-requests | #82.executor": "Run",
+    "HTTP Request.generated-requests | #83.executor": "Run",
+    "HTTP Request.generated-requests | #84.executor": "Run",
+    "HTTP Request.generated-requests | #85.executor": "Run",
+    "HTTP Request.generated-requests | #86.executor": "Run",
+    "HTTP Request.generated-requests | #87.executor": "Run",
+    "HTTP Request.generated-requests | #88.executor": "Run",
+    "HTTP Request.generated-requests | #89.executor": "Run",
+    "HTTP Request.generated-requests | #9.executor": "Run",
+    "HTTP Request.generated-requests | #90.executor": "Run",
+    "HTTP Request.generated-requests | #92.executor": "Run",
+    "HTTP Request.generated-requests | #93.executor": "Run",
+    "HTTP Request.generated-requests | #94.executor": "Run",
+    "JUnit.UserServiceImplTest.UserCan_MarkTaskAsPriority.executor": "Run",
+    "JUnit.UserServiceImplTest.executor": "Run",
+    "JUnit.UserServiceImplTest.loginNonExistentUser_throwsExceptionTest.executor": "Run",
+    "JUnit.UserServiceImplTest.loginWithIncorrectPassword_throwsExceptionTest.executor": "Run",
+    "JUnit.UserServiceImplTest.loginWrongUser_throwsExceptionTest.executor": "Run",
+    "JUnit.UserServiceImplTest.testMarkTaskStatus.executor": "Run",
+    "JUnit.UserServiceImplTest.testTodolistRegisterUserWithEmpty_String_ThrowIllegalArgumentException.executor": "Run",
+    "JUnit.UserServiceImplTest.testUserCanAdd_firstTodoList.executor": "Run",
+    "JUnit.UserServiceImplTest.testUserCanDeleteTodoList_ListIsZero.executor": "Run",
+    "JUnit.UserServiceImplTest.testUserCanLoginWithCorrect_Password.executor": "Run",
+    "JUnit.UserServiceImplTest.testUserCanLogout.executor": "Run",
+    "JUnit.UserServiceImplTest.testUserCanLogoutWithCorrect_Password.executor": "Run",
+    "JUnit.UserServiceImplTest.testUserCanRegister.executor": "Run",
+    "JUnit.UserServiceImplTest.testUserCanUpdateTodoList.executor": "Run",
+    "JUnit.UserServiceImplTest.testUserCan_ViewAllTOdoList.executor": "Run",
+    "JUnit.UserServiceImplTest.testUserCannotRegisterTwice.executor": "Run",
+    "JUnit.UsersTest.saveTest.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.Main.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/DELL/IdeaProjects/thisTodoList/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.solomon11.services" />
+      <recent name="org.solomon11.repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Main">
+    <configuration name="generated-requests | #108" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="108" requestIdentifier="#108" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thisTodoList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.solomon11.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.solomon11.services" />
+      <option name="MAIN_CLASS_NAME" value="org.solomon11.services.UserServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.loginWrongUser_throwsExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thisTodoList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.solomon11.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.solomon11.services" />
+      <option name="MAIN_CLASS_NAME" value="org.solomon11.services.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="loginWrongUser_throwsExceptionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.testUserCanLogout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thisTodoList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.solomon11.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.solomon11.services" />
+      <option name="MAIN_CLASS_NAME" value="org.solomon11.services.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="testUserCanLogout" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="thisTodoList" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.solomon11.Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.solomon11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="JUnit.UserServiceImplTest.loginWrongUser_throwsExceptionTest" />
+        <item itemvalue="JUnit.UserServiceImplTest" />
+        <item itemvalue="JUnit.UserServiceImplTest.testUserCanLogout" />
+        <item itemvalue="HTTP Request.generated-requests | #108" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,22 +281,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711894162086</updated>
-      <workItem from="1711894164584" duration="11000" />
+      <workItem from="1711894164584" duration="6214000" />
+      <workItem from="1711967977002" duration="4005000" />
+      <workItem from="1711972035631" duration="1320000" />
+      <workItem from="1712042733505" duration="39158000" />
+      <workItem from="1712225565771" duration="7439000" />
+      <workItem from="1712249789703" duration="337000" />
+      <workItem from="1712250504045" duration="12634000" />
+      <workItem from="1712340074657" duration="1492000" />
+      <workItem from="1712402761088" duration="4645000" />
+      <workItem from="1712497542166" duration="14765000" />
+      <workItem from="1712579321943" duration="342000" />
+      <workItem from="1712579706394" duration="7962000" />
+      <workItem from="1712611753321" duration="18425000" />
+      <workItem from="1712731238634" duration="17387000" />
+      <workItem from="1712859943926" duration="329000" />
+      <workItem from="1712860304672" duration="266000" />
+      <workItem from="1712860608205" duration="152000" />
+      <workItem from="1712860789172" duration="145000" />
+      <workItem from="1712860963243" duration="5908000" />
+      <workItem from="1712874250470" duration="16209000" />
+      <workItem from="1713016183823" duration="9945000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
