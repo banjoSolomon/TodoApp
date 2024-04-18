@@ -4,52 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="996c441a-502e-469d-9d52-0a0ba631b7c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/DeleteTodolistRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/EditTodolistRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/LogoutRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/MarkTaskPriorityRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/MarkTaskRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/TodolistRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/exceptions/InvalidLoginException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/exceptions/InvalidUsernameOrPassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/exceptions/RegistrationCantBeEmpty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/exceptions/TaskNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/exceptions/TaskTitleNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/exceptions/UserExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/exceptions/UsernameNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/models/TaskStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/models/TodoList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/repository/TodoListsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/repository/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/ApiResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/DeleteTodoListResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/EditTodolistUserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/LoginUserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/LogoutUserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/MarkTaskResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/RegisterUserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/TodoListResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/utilities/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/solomon11/repository/UsersTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/solomon11/services/UserServiceImplTest.java" afterDir="false" />
+    <list default="true" id="996c441a-502e-469d-9d52-0a0ba631b7c3" name="Changes" comment="todolist">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -86,6 +46,27 @@
     "HTTP Request.generated-requests | #106.executor": "Run",
     "HTTP Request.generated-requests | #107.executor": "Run",
     "HTTP Request.generated-requests | #108.executor": "Run",
+    "HTTP Request.generated-requests | #144.executor": "Run",
+    "HTTP Request.generated-requests | #145.executor": "Run",
+    "HTTP Request.generated-requests | #146.executor": "Run",
+    "HTTP Request.generated-requests | #147.executor": "Run",
+    "HTTP Request.generated-requests | #148.executor": "Run",
+    "HTTP Request.generated-requests | #174.executor": "Run",
+    "HTTP Request.generated-requests | #175.executor": "Run",
+    "HTTP Request.generated-requests | #176.executor": "Run",
+    "HTTP Request.generated-requests | #177.executor": "Run",
+    "HTTP Request.generated-requests | #178.executor": "Run",
+    "HTTP Request.generated-requests | #179.executor": "Run",
+    "HTTP Request.generated-requests | #180.executor": "Run",
+    "HTTP Request.generated-requests | #181.executor": "Run",
+    "HTTP Request.generated-requests | #182.executor": "Run",
+    "HTTP Request.generated-requests | #183.executor": "Run",
+    "HTTP Request.generated-requests | #187.executor": "Run",
+    "HTTP Request.generated-requests | #188.executor": "Run",
+    "HTTP Request.generated-requests | #189.executor": "Run",
+    "HTTP Request.generated-requests | #190.executor": "Run",
+    "HTTP Request.generated-requests | #191.executor": "Run",
+    "HTTP Request.generated-requests | #192.executor": "Run",
     "HTTP Request.generated-requests | #23.executor": "Run",
     "HTTP Request.generated-requests | #25.executor": "Run",
     "HTTP Request.generated-requests | #26.executor": "Run",
@@ -170,7 +151,7 @@
     "Spring Boot.Main.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -193,55 +174,17 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Main">
-    <configuration name="generated-requests | #108" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="108" requestIdentifier="#108" runType="Run single request">
+    <configuration name="generated-requests | #189" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="189" requestIdentifier="#189" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="thisTodoList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.solomon11.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.solomon11.services" />
-      <option name="MAIN_CLASS_NAME" value="org.solomon11.services.UserServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #190" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="190" requestIdentifier="#190" runType="Run single request">
+      <method v="2" />
     </configuration>
-    <configuration name="UserServiceImplTest.loginWrongUser_throwsExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="thisTodoList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.solomon11.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.solomon11.services" />
-      <option name="MAIN_CLASS_NAME" value="org.solomon11.services.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="loginWrongUser_throwsExceptionTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #191" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="191" requestIdentifier="#191" runType="Run single request">
+      <method v="2" />
     </configuration>
-    <configuration name="UserServiceImplTest.testUserCanLogout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="thisTodoList" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.solomon11.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.solomon11.services" />
-      <option name="MAIN_CLASS_NAME" value="org.solomon11.services.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="testUserCanLogout" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="generated-requests | #192" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="192" requestIdentifier="#192" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="thisTodoList" />
@@ -259,10 +202,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Main" />
-        <item itemvalue="JUnit.UserServiceImplTest.loginWrongUser_throwsExceptionTest" />
-        <item itemvalue="JUnit.UserServiceImplTest" />
-        <item itemvalue="JUnit.UserServiceImplTest.testUserCanLogout" />
-        <item itemvalue="HTTP Request.generated-requests | #108" />
+        <item itemvalue="HTTP Request.generated-requests | #192" />
+        <item itemvalue="HTTP Request.generated-requests | #191" />
+        <item itemvalue="HTTP Request.generated-requests | #190" />
+        <item itemvalue="HTTP Request.generated-requests | #189" />
       </list>
     </recent_temporary>
   </component>
@@ -302,10 +245,29 @@
       <workItem from="1712860963243" duration="5908000" />
       <workItem from="1712874250470" duration="16209000" />
       <workItem from="1713016183823" duration="9945000" />
+      <workItem from="1713052797632" duration="770000" />
+      <workItem from="1713164635161" duration="156000" />
+      <workItem from="1713165214562" duration="657000" />
+      <workItem from="1713181191674" duration="363000" />
+      <workItem from="1713254427817" duration="41000" />
+      <workItem from="1713277486316" duration="4714000" />
     </task>
+    <task id="LOCAL-00001" summary="todolist">
+      <option name="closed" value="true" />
+      <created>1713052924373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713052924373</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="todolist" />
+    <option name="LAST_COMMIT_MESSAGE" value="todolist" />
   </component>
 </project>

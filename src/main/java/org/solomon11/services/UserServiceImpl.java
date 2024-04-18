@@ -52,6 +52,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public LogoutUserResponse logout(LogoutRequest logoutRequest) {
+        authenticatedUser = null;
         User foundUser = findUserBy(logoutRequest.getUsername());
         User savedUser = users.save(foundUser);
         return mapLogoutResponse(savedUser);
