@@ -51,4 +51,10 @@ public class TodoListServiceImpl implements TodoListService{
         TodoList todoList = checkMapTaskPriority(markTaskPriorityRequest);
         return todoListsRepository.save(todoList);
     }
+
+    @Override
+    public TodoList findTaskById(String listId) {
+        return todoListsRepository.findById(listId).orElse(null);
+
+    }
 }

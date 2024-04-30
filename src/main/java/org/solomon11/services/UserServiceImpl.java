@@ -11,6 +11,7 @@ import org.solomon11.response.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,6 +60,19 @@ public class UserServiceImpl implements UserService {
 
     }
 
+    @Override
+    public StartTaskResponse startTask(StartTaskRequest startTaskRequest) {
+        validateAuthentication();
+        User foundUser = findUserBy(startTaskRequest.getUsername());
+        TodoList foundTask = todoListService.findTaskById(startTaskRequest.getListId());
+        if (!foundUser.getTodoList().contains(foundTask))
+            throw new TaskNotFound("Tasks Not Found For User");
+        foundTask.setStatus(TaskStatus.IN_PROGRESS);
+        foundTask.setStartTime(LocalDateTime.now());
+        return startTaskResponseMap(foundTask);
+
+    }
+
     private void validateAuthentication() {
         if (authenticatedUser == null)
             throw new InvalidLoginException("user must be login to perform any operations");
@@ -70,7 +84,6 @@ public class UserServiceImpl implements UserService {
         validateAuthentication();
         User foundUser = findUserBy(todolistRequest.getUsername());
         TodoList newTodoList = todoListService.createTodoListWith(todolistRequest);
-        newTodoList.setStatus(todolistRequest.getStatus());
         foundUser.getTodoList().add(newTodoList);
         users.save(foundUser);
         return mapCreateTodoListResponseWith(newTodoList);

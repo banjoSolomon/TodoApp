@@ -15,5 +15,8 @@ public interface TodoListService {
     TodoList markTaskStatusWith(MarkTaskRequest markTaskRequest);
 
     TodoList markTaskAsPriorityWith(MarkTaskPriorityRequest markTaskPriorityRequest);
+
+    TodoList findTaskById(String listId);
+
 }
 

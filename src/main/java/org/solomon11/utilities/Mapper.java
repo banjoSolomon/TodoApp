@@ -1,6 +1,7 @@
 package org.solomon11.utilities;
 
 import org.solomon11.dto.*;
+import org.solomon11.models.TaskStatus;
 import org.solomon11.models.TodoList;
 import org.solomon11.models.User;
 import org.solomon11.response.*;
@@ -46,7 +47,7 @@ public class Mapper {
         TodoListResponse todoListResponse = new TodoListResponse();
         todoListResponse.setListId(todoList.getId());
         todoListResponse.setTitle((todoList.getTitle()));
-        todoListResponse.setStatus((todoList.getStatus()));
+        todoListResponse.setStatus(TaskStatus.PENDING);
         todoListResponse.setDateCreated(DateTimeFormatter
                 .ofPattern("dd/MMM/yyyy 'at' HH:mm:ss a").format(todoList.getDateCreated()));
         return todoListResponse;
@@ -55,7 +56,7 @@ public class Mapper {
     public static TodoList checkMap(TodolistRequest todoList) {
         TodoList todoList1 = new TodoList();
         todoList1.setTitle(todoList.getTitle());
-        todoList1.setStatus(todoList.getStatus());
+        todoList1.setStatus(TaskStatus.PENDING);
         return todoList1;
     }
 
@@ -115,5 +116,17 @@ public class Mapper {
         markTaskResponse.setDateUpdated(DateTimeFormatter
                 .ofPattern("dd/MMM/yyyy 'at' HH:mm:ss a").format(todoList.getDateUpdated()));
         return markTaskResponse;
+    }
+
+    public static StartTaskResponse startTaskResponseMap(TodoList task){
+        StartTaskResponse startTaskResponse = new StartTaskResponse();
+        startTaskResponse.setListId(task.getId());
+        startTaskResponse.setTitle(task.getTitle());
+        startTaskResponse.setStatus(TaskStatus.IN_PROGRESS);
+        startTaskResponse.setStartTime(DateTimeFormatter
+                .ofPattern("dd/MMM/yyyy 'at' HH:mm:ss a").format(task.getDateCreated()));
+        startTaskResponse.setStartTime(DateTimeFormatter
+                .ofPattern("dd/MMM/yyyy 'at' HH:mm:ss a").format(task.getStartTime()));
+        return startTaskResponse;
     }
 }

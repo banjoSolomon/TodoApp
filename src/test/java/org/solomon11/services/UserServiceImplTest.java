@@ -32,6 +32,7 @@ public class UserServiceImplTest {
     private MarkTaskRequest markTaskRequest;
     private  MarkTaskPriorityRequest markTaskPriorityRequest;
     private  LogoutRequest logoutRequest;
+    private StartTaskRequest startTaskRequest;
 
     @BeforeEach
     public void setUp(){
@@ -48,7 +49,7 @@ public class UserServiceImplTest {
         todolistRequest = new TodolistRequest();
         todolistRequest.setUsername("username");
         todolistRequest.setTitle("title");
-        todolistRequest.setStatus(TaskStatus.PENDING);
+
 
         editTodolistRequest = new EditTodolistRequest();
         editTodolistRequest.setAuthor("username");
@@ -70,6 +71,10 @@ public class UserServiceImplTest {
 
         logoutRequest = new LogoutRequest();
         logoutRequest.setUsername("username");
+
+        startTaskRequest = new StartTaskRequest();
+        startTaskRequest.setUsername("username");
+        startTaskRequest.setTitle("title");
 
     }
 
@@ -165,7 +170,7 @@ public class UserServiceImplTest {
         todolistRequest = new TodolistRequest();
         todolistRequest.setUsername(registerRequest.getUsername());
         todolistRequest.setTitle("title");
-        todolistRequest.setStatus(TaskStatus.PENDING);
+       // todolistRequest.setStatus(TaskStatus.PENDING);
         var todolistResponse = userService.createTodolist(todolistRequest);
         checkUser = users.findByUsername(registerRequest.getUsername());
         assertThat(checkUser.getTodoList().size(), is(1));
@@ -180,10 +185,14 @@ public class UserServiceImplTest {
         registerRequest.setUsername("username");
         registerRequest.setPassword("password");
         userService.register(registerRequest);
+        loginRequest = new LoginRequest();
+        loginRequest.setUsername("username");
+        loginRequest.setPassword("password");
+        userService.login(loginRequest);
         todolistRequest = new TodolistRequest();
         todolistRequest.setUsername("username");
         todolistRequest.setTitle("title");
-        todolistRequest.setStatus(TaskStatus.PENDING);
+       // todolistRequest.setStatus(TaskStatus.PENDING);
         userService.createTodolist(todolistRequest);
 
         var foundUser = users.findByUsername(registerRequest.getUsername().toLowerCase());
@@ -202,6 +211,10 @@ public class UserServiceImplTest {
     @Test
     public void testUserCanDeleteTodoList_ListIsZero(){
         userService.register(registerRequest);
+        loginRequest = new LoginRequest();
+        loginRequest.setUsername("username");
+        loginRequest.setPassword("password");
+        userService.login(loginRequest);
         userService.createTodolist(todolistRequest);
         var foundUser = users.findByUsername(registerRequest.getUsername().toLowerCase());
         var savedPost = foundUser.getTodoList().getFirst();
@@ -233,17 +246,40 @@ public class UserServiceImplTest {
         todolistRequest = new TodolistRequest();
         todolistRequest.setUsername(registerRequest.getUsername());
         todolistRequest.setTitle("title");
-        todolistRequest.setStatus(TaskStatus.PENDING);
         userService.createTodolist(todolistRequest);
-
         todolistRequest.setTitle("title1");
-        todolistRequest.setStatus(TaskStatus.PENDING);
         userService.createTodolist(todolistRequest);
 
         var checkName = users.findByUsername(registerRequest.getUsername());
         assertThat(checkName.getTodoList().size(), is(2));
         var todolistResponse = userService.viewAllTodoList(todolistRequest);
         assertThat(todolistResponse.size(), is(2));
+
+
+    }
+
+    @Test
+    public void testUserCan_StartTask(){
+        registerRequest = new RegisterRequest();
+        registerRequest.setFirstName("Solomon");
+        registerRequest.setUsername("username");
+        registerRequest.setPassword("password");
+        userService.register(registerRequest);
+        assertThat(users.count(), is(1L));
+        loginRequest = new LoginRequest();
+        loginRequest.setUsername("username");
+        loginRequest.setPassword("password");
+        userService.login(loginRequest);
+        startTaskRequest = new StartTaskRequest();
+        startTaskRequest.setUsername(registerRequest.getUsername());
+        startTaskRequest.setTitle("title");
+        var startTaskResponse = userService.startTask(startTaskRequest);
+
+
+
+
+
+
 
 
     }
@@ -265,7 +301,7 @@ public class UserServiceImplTest {
         todolistRequest = new TodolistRequest();
         todolistRequest.setUsername(registerRequest.getUsername());
         todolistRequest.setTitle("title");
-        todolistRequest.setStatus(TaskStatus.PENDING);
+        //todolistRequest.setStatus(TaskStatus.PENDING);
         userService.createTodolist(todolistRequest);
         var updateUserBeforeMarking = users.findByUsername(registerRequest.getUsername());
         assertThat(updateUserBeforeMarking.getTodoList().size(), is(1));
@@ -301,7 +337,7 @@ public class UserServiceImplTest {
         todolistRequest = new TodolistRequest();
         todolistRequest.setUsername(registerRequest.getUsername());
         todolistRequest.setTitle("title");
-        todolistRequest.setStatus(TaskStatus.PENDING);
+       // todolistRequest.setStatus(TaskStatus.PENDING);
         userService.createTodolist(todolistRequest);
         var updateUserBeforeMarking = users.findByUsername(registerRequest.getUsername());
         assertThat(updateUserBeforeMarking.getTodoList().size(), is(1));

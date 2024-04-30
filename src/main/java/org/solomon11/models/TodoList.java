@@ -15,6 +15,10 @@ public class TodoList {
     private TaskStatus status;
     private LocalDateTime dateCreated = LocalDateTime.now();
     private LocalDateTime dateUpdated = LocalDateTime.now();
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
+
+
 
 
 
