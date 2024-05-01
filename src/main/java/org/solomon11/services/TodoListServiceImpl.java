@@ -53,8 +53,10 @@ public class TodoListServiceImpl implements TodoListService{
     }
 
     @Override
-    public TodoList findTaskById(String listId) {
-        return todoListsRepository.findById(listId).orElse(null);
+    public TodoList startTaskWith(StartTaskRequest startTaskRequest) {
+        TodoList todoList = checkMapStartTask(startTaskRequest);
+        return todoListsRepository.save(todoList);
 
     }
+
 }

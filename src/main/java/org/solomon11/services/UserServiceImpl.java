@@ -11,7 +11,6 @@ import org.solomon11.response.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,15 +62,32 @@ public class UserServiceImpl implements UserService {
     @Override
     public StartTaskResponse startTask(StartTaskRequest startTaskRequest) {
         validateAuthentication();
+        String username = startTaskRequest.getUsername();
+       String title = startTaskRequest.getTitle();
         User foundUser = findUserBy(startTaskRequest.getUsername());
-        TodoList foundTask = todoListService.findTaskById(startTaskRequest.getListId());
-        if (!foundUser.getTodoList().contains(foundTask))
-            throw new TaskNotFound("Tasks Not Found For User");
-        foundTask.setStatus(TaskStatus.IN_PROGRESS);
-        foundTask.setStartTime(LocalDateTime.now());
-        return startTaskResponseMap(foundTask);
+        TodoList newTodoList = todoListService.startTaskWith(startTaskRequest);
+        TodoList taskToStart = null;
+        for(TodoList todoList : foundUser.getTodoList()) {
+            if(todoList.getTitle().equals(title)) {
+                taskToStart = todoList;
+                break;
+            }
 
+        }
+        if (taskToStart == null) {
+            throw new TaskNotFound("Task not found");
+        }
+
+
+        taskToStart.setStatus(TaskStatus.IN_PROGRESS);
+
+        users.save(foundUser);
+        return startTaskResponseMap(taskToStart);
     }
+
+
+
+
 
     private void validateAuthentication() {
         if (authenticatedUser == null)
@@ -139,18 +155,6 @@ public class UserServiceImpl implements UserService {
 
     }
 
-    @Override
-    public MarkTaskResponse markTaskAsPriority(MarkTaskPriorityRequest markTaskPriorityRequest) {
-        validateAuthentication();
-        User foundUser = findUserBy(markTaskPriorityRequest.getUsername());
-        TodoList newTodoList = todoListService.markTaskAsPriorityWith(markTaskPriorityRequest);
-        TodoList todoList = findTodoListByTitle(markTaskPriorityRequest.getTitle(), foundUser);
-        todoList.setStatus(TaskStatus.PRIORITY);
-        TodoList updatedTodoList = todoListsRepository.save(todoList);
-        MarkTaskResponse markTaskResponse = mapMarkTaskResponse(updatedTodoList);
-        users.save(foundUser);
-        return markTaskResponse;
-    }
 
 
     private TodoList findTodoListByTitle(String title, User foundUser) {

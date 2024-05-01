@@ -227,6 +227,12 @@ public class UserServiceImplTest {
 
     }
 
+
+    @Test
+    public void testToViewAllPendingTask(){
+
+    }
+
     @Test
     public void testUserCan_ViewAllTodoList(){
         registerRequest = new RegisterRequest();
@@ -260,27 +266,28 @@ public class UserServiceImplTest {
 
     @Test
     public void testUserCan_StartTask(){
-        registerRequest = new RegisterRequest();
-        registerRequest.setFirstName("Solomon");
-        registerRequest.setUsername("username");
-        registerRequest.setPassword("password");
         userService.register(registerRequest);
-        assertThat(users.count(), is(1L));
-        loginRequest = new LoginRequest();
-        loginRequest.setUsername("username");
-        loginRequest.setPassword("password");
         userService.login(loginRequest);
+
+        todolistRequest = new TodolistRequest();
+        todolistRequest.setUsername(registerRequest.getUsername());
+        todolistRequest.setTitle("title");
+        userService.createTodolist(todolistRequest);
+
+        var checkUser = users.findByUsername(registerRequest.getUsername());
+        assertThat(checkUser.getTodoList().size(), is(1));
+
+        var savedTodoList = checkUser.getTodoList().getFirst();
+
         startTaskRequest = new StartTaskRequest();
         startTaskRequest.setUsername(registerRequest.getUsername());
         startTaskRequest.setTitle("title");
-        var startTaskResponse = userService.startTask(startTaskRequest);
+        userService.startTask(startTaskRequest);
+        var updateUser = users.findByUsername(registerRequest.getUsername());
+        assertThat(updateUser.getTodoList().size(), is(1));
 
-
-
-
-
-
-
+        var updatedTask = updateUser.getTodoList().getFirst();
+        assertThat(updatedTask.getStatus(), is(TaskStatus.IN_PROGRESS));
 
     }
 
@@ -321,37 +328,7 @@ public class UserServiceImplTest {
 
     }
 
-    @Test
-    public void UserCan_MarkTaskAsPriority(){
-        registerRequest = new RegisterRequest();
-        registerRequest.setFirstName("Solomon");
-        registerRequest.setUsername("username");
-        registerRequest.setPassword("password");
-        userService.register(registerRequest);
-        loginRequest = new LoginRequest();
-        loginRequest.setUsername("username");
-        loginRequest.setPassword("password");
-        userService.login(loginRequest);
-        var checkUser = users.findByUsername(registerRequest.getUsername());
-        assertThat(checkUser.getTodoList().size(), is(0));
-        todolistRequest = new TodolistRequest();
-        todolistRequest.setUsername(registerRequest.getUsername());
-        todolistRequest.setTitle("title");
-       // todolistRequest.setStatus(TaskStatus.PENDING);
-        userService.createTodolist(todolistRequest);
-        var updateUserBeforeMarking = users.findByUsername(registerRequest.getUsername());
-        assertThat(updateUserBeforeMarking.getTodoList().size(), is(1));
-        markTaskRequest = new MarkTaskRequest();
-        markTaskRequest.setUsername("username");
-        markTaskRequest.setTitle("title");
-        markTaskRequest.setStatus(TaskStatus.PRIORITY);
-        userService.markTaskAsPriority(markTaskPriorityRequest);
-        var updateUserAfterMarking = users.findByUsername(registerRequest.getUsername());
-        assertThat(updateUserAfterMarking.getTodoList().size(), is(1));
-        TodoList updatedTodoList = updateUserAfterMarking.getTodoList().getFirst();
-        assertThat(updatedTodoList.getStatus(), is(TaskStatus.PRIORITY));
 
-    }
 
     @Test
     public void testUserCanLogout() {
@@ -368,8 +345,3 @@ public class UserServiceImplTest {
     }
 
     }
-
-
-
-
-

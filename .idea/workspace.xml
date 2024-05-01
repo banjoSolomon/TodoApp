@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996c441a-502e-469d-9d52-0a0ba631b7c3" name="Changes" comment="todolist">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/StartTaskRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/StartTaskResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/TodolistRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/TodolistRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/models/TaskStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/models/TaskStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/StartTaskRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/dto/StartTaskRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/models/TodoList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/models/TodoList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/utilities/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/utilities/Mapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/solomon11/services/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/solomon11/services/UserServiceImplTest.java" afterDir="false" />
@@ -63,153 +59,153 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "HTTP Request.generated-requests | #1.executor": "Run",
-    "HTTP Request.generated-requests | #104.executor": "Run",
-    "HTTP Request.generated-requests | #105.executor": "Run",
-    "HTTP Request.generated-requests | #106.executor": "Run",
-    "HTTP Request.generated-requests | #107.executor": "Run",
-    "HTTP Request.generated-requests | #108.executor": "Run",
-    "HTTP Request.generated-requests | #144.executor": "Run",
-    "HTTP Request.generated-requests | #145.executor": "Run",
-    "HTTP Request.generated-requests | #146.executor": "Run",
-    "HTTP Request.generated-requests | #147.executor": "Run",
-    "HTTP Request.generated-requests | #148.executor": "Run",
-    "HTTP Request.generated-requests | #174.executor": "Run",
-    "HTTP Request.generated-requests | #175.executor": "Run",
-    "HTTP Request.generated-requests | #176.executor": "Run",
-    "HTTP Request.generated-requests | #177.executor": "Run",
-    "HTTP Request.generated-requests | #178.executor": "Run",
-    "HTTP Request.generated-requests | #179.executor": "Run",
-    "HTTP Request.generated-requests | #180.executor": "Run",
-    "HTTP Request.generated-requests | #181.executor": "Run",
-    "HTTP Request.generated-requests | #182.executor": "Run",
-    "HTTP Request.generated-requests | #183.executor": "Run",
-    "HTTP Request.generated-requests | #187.executor": "Run",
-    "HTTP Request.generated-requests | #188.executor": "Run",
-    "HTTP Request.generated-requests | #189.executor": "Run",
-    "HTTP Request.generated-requests | #190.executor": "Run",
-    "HTTP Request.generated-requests | #191.executor": "Run",
-    "HTTP Request.generated-requests | #192.executor": "Run",
-    "HTTP Request.generated-requests | #193.executor": "Run",
-    "HTTP Request.generated-requests | #194.executor": "Run",
-    "HTTP Request.generated-requests | #195.executor": "Run",
-    "HTTP Request.generated-requests | #196.executor": "Run",
-    "HTTP Request.generated-requests | #197.executor": "Run",
-    "HTTP Request.generated-requests | #199.executor": "Run",
-    "HTTP Request.generated-requests | #200.executor": "Run",
-    "HTTP Request.generated-requests | #201.executor": "Run",
-    "HTTP Request.generated-requests | #202.executor": "Run",
-    "HTTP Request.generated-requests | #203.executor": "Run",
-    "HTTP Request.generated-requests | #204.executor": "Run",
-    "HTTP Request.generated-requests | #206.executor": "Run",
-    "HTTP Request.generated-requests | #207.executor": "Run",
-    "HTTP Request.generated-requests | #208.executor": "Run",
-    "HTTP Request.generated-requests | #23.executor": "Run",
-    "HTTP Request.generated-requests | #232.executor": "Run",
-    "HTTP Request.generated-requests | #233.executor": "Run",
-    "HTTP Request.generated-requests | #234.executor": "Run",
-    "HTTP Request.generated-requests | #25.executor": "Run",
-    "HTTP Request.generated-requests | #26.executor": "Run",
-    "HTTP Request.generated-requests | #29.executor": "Run",
-    "HTTP Request.generated-requests | #3.executor": "Run",
-    "HTTP Request.generated-requests | #35.executor": "Run",
-    "HTTP Request.generated-requests | #36.executor": "Run",
-    "HTTP Request.generated-requests | #37.executor": "Run",
-    "HTTP Request.generated-requests | #38.executor": "Run",
-    "HTTP Request.generated-requests | #39.executor": "Run",
-    "HTTP Request.generated-requests | #40.executor": "Run",
-    "HTTP Request.generated-requests | #42.executor": "Run",
-    "HTTP Request.generated-requests | #43.executor": "Run",
-    "HTTP Request.generated-requests | #44.executor": "Run",
-    "HTTP Request.generated-requests | #45.executor": "Run",
-    "HTTP Request.generated-requests | #46.executor": "Run",
-    "HTTP Request.generated-requests | #47.executor": "Run",
-    "HTTP Request.generated-requests | #48.executor": "Run",
-    "HTTP Request.generated-requests | #49.executor": "Run",
-    "HTTP Request.generated-requests | #5.executor": "Run",
-    "HTTP Request.generated-requests | #50.executor": "Run",
-    "HTTP Request.generated-requests | #51.executor": "Run",
-    "HTTP Request.generated-requests | #53.executor": "Run",
-    "HTTP Request.generated-requests | #6.executor": "Run",
-    "HTTP Request.generated-requests | #64.executor": "Run",
-    "HTTP Request.generated-requests | #65.executor": "Run",
-    "HTTP Request.generated-requests | #66.executor": "Run",
-    "HTTP Request.generated-requests | #67.executor": "Run",
-    "HTTP Request.generated-requests | #68.executor": "Run",
-    "HTTP Request.generated-requests | #69.executor": "Run",
-    "HTTP Request.generated-requests | #7.executor": "Run",
-    "HTTP Request.generated-requests | #70.executor": "Run",
-    "HTTP Request.generated-requests | #71.executor": "Run",
-    "HTTP Request.generated-requests | #72.executor": "Run",
-    "HTTP Request.generated-requests | #73.executor": "Run",
-    "HTTP Request.generated-requests | #74.executor": "Run",
-    "HTTP Request.generated-requests | #75.executor": "Run",
-    "HTTP Request.generated-requests | #76.executor": "Run",
-    "HTTP Request.generated-requests | #77.executor": "Run",
-    "HTTP Request.generated-requests | #78.executor": "Run",
-    "HTTP Request.generated-requests | #79.executor": "Run",
-    "HTTP Request.generated-requests | #8.executor": "Run",
-    "HTTP Request.generated-requests | #80.executor": "Run",
-    "HTTP Request.generated-requests | #81.executor": "Run",
-    "HTTP Request.generated-requests | #82.executor": "Run",
-    "HTTP Request.generated-requests | #83.executor": "Run",
-    "HTTP Request.generated-requests | #84.executor": "Run",
-    "HTTP Request.generated-requests | #85.executor": "Run",
-    "HTTP Request.generated-requests | #86.executor": "Run",
-    "HTTP Request.generated-requests | #87.executor": "Run",
-    "HTTP Request.generated-requests | #88.executor": "Run",
-    "HTTP Request.generated-requests | #89.executor": "Run",
-    "HTTP Request.generated-requests | #9.executor": "Run",
-    "HTTP Request.generated-requests | #90.executor": "Run",
-    "HTTP Request.generated-requests | #92.executor": "Run",
-    "HTTP Request.generated-requests | #93.executor": "Run",
-    "HTTP Request.generated-requests | #94.executor": "Run",
-    "JUnit.UserServiceImplTest.UserCan_MarkTaskAsPriority.executor": "Run",
-    "JUnit.UserServiceImplTest.executor": "Run",
-    "JUnit.UserServiceImplTest.loginNonExistentUser_throwsExceptionTest.executor": "Run",
-    "JUnit.UserServiceImplTest.loginWithIncorrectPassword_throwsExceptionTest.executor": "Run",
-    "JUnit.UserServiceImplTest.loginWrongUser_throwsExceptionTest.executor": "Run",
-    "JUnit.UserServiceImplTest.testMarkTaskStatus.executor": "Run",
-    "JUnit.UserServiceImplTest.testTodolistRegisterUserWithEmpty_String_ThrowIllegalArgumentException.executor": "Run",
-    "JUnit.UserServiceImplTest.testUserCanAdd_firstTodoList.executor": "Run",
-    "JUnit.UserServiceImplTest.testUserCanDeleteTodoList_ListIsZero.executor": "Run",
-    "JUnit.UserServiceImplTest.testUserCanLoginWithCorrect_Password.executor": "Run",
-    "JUnit.UserServiceImplTest.testUserCanLogout.executor": "Run",
-    "JUnit.UserServiceImplTest.testUserCanLogoutWithCorrect_Password.executor": "Run",
-    "JUnit.UserServiceImplTest.testUserCanRegister.executor": "Run",
-    "JUnit.UserServiceImplTest.testUserCanUpdateTodoList.executor": "Run",
-    "JUnit.UserServiceImplTest.testUserCan_StartTask.executor": "Run",
-    "JUnit.UserServiceImplTest.testUserCan_ViewAllTOdoList.executor": "Run",
-    "JUnit.UserServiceImplTest.testUserCannotRegisterTwice.executor": "Run",
-    "JUnit.UsersTest.saveTest.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.Main.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/DELL/IdeaProjects/thisTodoList/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #104.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #105.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #106.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #107.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #108.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #144.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #145.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #146.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #147.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #148.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #174.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #175.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #176.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #177.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #178.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #179.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #180.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #181.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #182.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #183.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #187.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #188.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #189.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #190.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #191.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #192.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #193.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #194.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #195.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #196.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #197.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #199.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #200.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #201.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #202.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #203.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #204.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #206.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #207.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #208.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #23.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #232.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #233.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #234.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #25.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #26.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #29.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #35.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #36.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #37.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #38.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #39.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #40.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #42.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #43.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #44.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #45.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #46.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #47.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #48.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #49.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #5.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #50.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #51.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #53.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #6.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #64.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #65.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #66.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #67.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #68.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #69.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #7.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #70.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #71.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #72.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #73.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #74.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #75.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #76.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #77.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #78.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #79.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #8.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #80.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #81.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #82.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #83.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #84.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #85.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #86.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #87.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #88.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #89.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #9.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #90.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #92.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #93.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.generated-requests | #94.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.UserCan_MarkTaskAsPriority.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.loginNonExistentUser_throwsExceptionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.loginWithIncorrectPassword_throwsExceptionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.loginWrongUser_throwsExceptionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.testMarkTaskStatus.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.testTodolistRegisterUserWithEmpty_String_ThrowIllegalArgumentException.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.testUserCanAdd_firstTodoList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.testUserCanDeleteTodoList_ListIsZero.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.testUserCanLoginWithCorrect_Password.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.testUserCanLogout.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.testUserCanLogoutWithCorrect_Password.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.testUserCanRegister.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.testUserCanUpdateTodoList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.testUserCan_StartTask.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.testUserCan_ViewAllTOdoList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserServiceImplTest.testUserCannotRegisterTwice.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UsersTest.saveTest.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/DELL/IdeaProjects/thisTodoList/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -219,10 +215,7 @@
       <recent name="org.solomon11.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceImplTest.testUserCan_StartTask">
-    <configuration name="generated-requests | #233" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="233" requestIdentifier="#233" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserServiceImplTest">
     <configuration name="generated-requests | #234" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="234" requestIdentifier="#234" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -257,6 +250,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceImplTest.testUserCanAdd_firstTodoList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thisTodoList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.solomon11.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.solomon11.services" />
+      <option name="MAIN_CLASS_NAME" value="org.solomon11.services.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="testUserCanAdd_firstTodoList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceImplTest.testUserCan_StartTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="thisTodoList" />
       <extension name="coverage">
@@ -275,11 +284,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceImplTest.testUserCan_StartTask" />
         <item itemvalue="JUnit.UserServiceImplTest" />
+        <item itemvalue="JUnit.UserServiceImplTest.testUserCan_StartTask" />
+        <item itemvalue="JUnit.UserServiceImplTest.testUserCanAdd_firstTodoList" />
         <item itemvalue="JUnit.UserServiceImplTest.UserCan_MarkTaskAsPriority" />
         <item itemvalue="HTTP Request.generated-requests | #234" />
-        <item itemvalue="HTTP Request.generated-requests | #233" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +340,8 @@
       <workItem from="1713705886639" duration="7965000" />
       <workItem from="1713717911085" duration="10237000" />
       <workItem from="1714085208293" duration="1247000" />
-      <workItem from="1714416009931" duration="11965000" />
+      <workItem from="1714416009931" duration="14411000" />
+      <workItem from="1714479068384" duration="7008000" />
     </task>
     <task id="LOCAL-00001" summary="todolist">
       <option name="closed" value="true" />
@@ -349,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713438548415</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="todolist">
+      <option name="closed" value="true" />
+      <created>1714465656599</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714465656599</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

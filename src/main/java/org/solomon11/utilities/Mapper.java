@@ -66,6 +66,11 @@ public class Mapper {
         todoList1.setStatus(markTaskRequest.getStatus());
         return todoList1;
     }
+    public static TodoList checkMapStartTask(StartTaskRequest startTaskRequest) {
+        TodoList todoList2 = new TodoList();
+        todoList2.setTitle(startTaskRequest.getTitle());
+        return todoList2;
+    }
 
     public static TodoList checkMapTaskPriority(MarkTaskPriorityRequest markTaskPriorityRequest) {
         TodoList todoList1 = new TodoList();
@@ -123,8 +128,6 @@ public class Mapper {
         startTaskResponse.setListId(task.getId());
         startTaskResponse.setTitle(task.getTitle());
         startTaskResponse.setStatus(TaskStatus.IN_PROGRESS);
-        startTaskResponse.setStartTime(DateTimeFormatter
-                .ofPattern("dd/MMM/yyyy 'at' HH:mm:ss a").format(task.getDateCreated()));
         startTaskResponse.setStartTime(DateTimeFormatter
                 .ofPattern("dd/MMM/yyyy 'at' HH:mm:ss a").format(task.getStartTime()));
         return startTaskResponse;

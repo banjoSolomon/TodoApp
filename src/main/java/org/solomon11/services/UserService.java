@@ -21,8 +21,6 @@ public interface UserService {
 
     MarkTaskResponse markTaskStatus(MarkTaskRequest markTaskRequest);
 
-    MarkTaskResponse markTaskAsPriority(MarkTaskPriorityRequest markTaskPriorityRequest);
-
     LogoutUserResponse logout(LogoutRequest logoutRequest);
 
     StartTaskResponse startTask(StartTaskRequest startTaskRequest);
