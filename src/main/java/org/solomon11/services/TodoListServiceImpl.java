@@ -46,11 +46,6 @@ public class TodoListServiceImpl implements TodoListService{
 
     }
 
-    @Override
-    public TodoList markTaskAsPriorityWith(MarkTaskPriorityRequest markTaskPriorityRequest) {
-        TodoList todoList = checkMapTaskPriority(markTaskPriorityRequest);
-        return todoListsRepository.save(todoList);
-    }
 
     @Override
     public TodoList startTaskWith(StartTaskRequest startTaskRequest) {

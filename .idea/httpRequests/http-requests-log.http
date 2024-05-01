@@ -1,0 +1,833 @@
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 47
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "bee",
+  "title": "semicolon"
+}
+
+<> 2024-04-30T063003.201.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 44
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "bee",
+  "password": "123"
+}
+
+<> 2024-04-30T062937.200.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 66
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "sam",
+  "username": "bee",
+  "password": "123"
+}
+
+<> 2024-04-30T062916.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 68
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "users",
+  "title": "check",
+  "status": "PENDING"
+}
+
+<> 2024-04-20T084631.201.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "users",
+  "password": "123"
+}
+
+<> 2024-04-20T084603.200.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 70
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "banjo",
+  "username": "users",
+  "password": "123"
+}
+
+<> 2024-04-20T084534.201.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 74
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "banjo",
+  "username": "users",
+  "password": "123",
+
+}
+
+<> 2024-04-20T084515.400.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 44
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "title": "check"
+}
+
+<> 2024-04-20T083844.201.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 45
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "password": "123"
+}
+
+<> 2024-04-20T083822.200.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 45
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "user",
+  "password": "123"
+}
+
+<> 2024-04-20T083815.200.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "banjo",
+  "username": "user",
+  "password": "123"
+}
+
+<> 2024-04-20T083754.400.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "banjo",
+  "username": "user",
+  "password": "123"
+}
+
+<> 2024-04-20T083749.201.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 48
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "jummyss",
+  "password": "123"
+}
+
+<> 2024-04-20T083700.200.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 48
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "jummyss",
+  "password": "123"
+}
+
+<> 2024-04-20T083658.200.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 48
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "jummyss",
+  "password": "123"
+}
+
+<> 2024-04-20T083653.200.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 72
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "banjo",
+  "username": "jummyss",
+  "password": "123"
+}
+
+<> 2024-04-20T083639.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "jummys",
+  "title": "check",
+  "status": "PENDING"
+}
+
+<> 2024-04-20T083146.201.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "jummys",
+  "password": "123"
+}
+
+<> 2024-04-20T083137.200.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 71
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "banjo",
+  "username": "jummys",
+  "password": "123"
+}
+
+<> 2024-04-20T083129.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 68
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "jummy",
+  "title": "check",
+  "status": "PENDING"
+}
+
+<> 2024-04-20T083013.201.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "jummy",
+  "password": "123"
+}
+
+<> 2024-04-20T082915.200.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 70
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "banjo",
+  "username": "jummy",
+  "password": "123"
+}
+
+<> 2024-04-20T082848.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 66
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "babe",
+  "title": "goal",
+  "status": "PENDING"
+}
+
+<> 2024-04-17T223224.400.json
+
+###
+
+POST http://localhost:8080/logout
+Content-Type: application/json
+Content-Length: 24
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "babe"
+}
+
+<> 2024-04-17T223146.200.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 67
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "babe",
+  "title": "house",
+  "status": "PENDING"
+}
+
+<> 2024-04-17T223118.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 68
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "babe",
+  "title": "school",
+  "status": "PENDING"
+}
+
+<> 2024-04-17T223109.201.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 45
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "babe",
+  "password": "123"
+}
+
+<> 2024-04-17T223046.200.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "banjo",
+  "username": "babe",
+  "password": "123"
+}
+
+<> 2024-04-17T223027.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 67
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "ife",
+  "title": "school",
+  "status": "PENDING"
+}
+
+<> 2024-04-17T222347.201.json
+
+###
+
+POST http://localhost:8080/logout
+Content-Type: application/json
+Content-Length: 23
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "ife"
+}
+
+<> 2024-04-17T222309.200.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 65
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "ife",
+  "title": "work",
+  "status": "PENDING"
+}
+
+<> 2024-04-17T222247.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 64
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "ife",
+  "title": "spa",
+  "status": "PENDING"
+}
+
+<> 2024-04-17T222236.201.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 44
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "ife",
+  "password": "123"
+}
+
+<> 2024-04-17T222216.200.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 68
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "banjo",
+  "username": "ife",
+  "password": "123"
+}
+
+<> 2024-04-17T222156.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 64
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "sam",
+  "title": "fgg",
+  "status": "PENDING"
+}
+
+<> 2024-04-17T222121.400.json
+
+###
+
+PATCH http://localhost:8080/View-All
+Content-Type: application/json
+Content-Length: 71
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "banjo",
+  "title": "view all",
+  "status": "PENDING"
+}
+
+<> 2024-04-16T220514.200.json
+
+###
+
+PATCH http://localhost:8080/View-All
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "sam",
+  "title": "view all",
+  "status": "PENDING"
+}
+
+<> 2024-04-16T220506.400.json
+
+###
+
+PATCH http://localhost:8080/View-All
+Content-Type: application/json
+Content-Length: 70
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "solo",
+  "title": "view all",
+  "status": "PENDING"
+}
+
+<> 2024-04-16T220451.200.json
+
+###
+
+PATCH http://localhost:8080/View-All
+Content-Type: application/json
+Content-Length: 71
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "banjo",
+  "title": "view all",
+  "status": "PENDING"
+}
+
+<> 2024-04-16T220436.200.json
+
+###
+
+PATCH http://localhost:8080/Mark-Task
+Content-Type: application/json
+Content-Length: 72
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "banjo",
+  "title": "semicolon",
+  "status": "PENDING"
+}
+
+<> 2024-04-16T220358.200.json
+
+###
+
+PATCH http://localhost:8080/Mark-Task
+Content-Type: application/json
+Content-Length: 77
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "banjo",
+  "title": "view mark task",
+  "status": "PENDING"
+}
+
+<> 2024-04-16T220341.400.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 70
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "banjo",
+  "title": "chelsea",
+  "status": "PENDING"
+}
+
+<> 2024-04-16T220305.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "banjo",
+  "title": "gaming",
+  "status": "PENDING"
+}
+
+<> 2024-04-16T220254.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 72
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "banjo",
+  "title": "semicolon",
+  "status": "PENDING"
+}
+
+<> 2024-04-16T220243.201.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "banjo",
+  "password": "123"
+}
+
+<> 2024-04-16T220213.200.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 69
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "firstName": "hsdh",
+  "username": "banjo",
+  "password": "123"
+}
+
+<> 2024-04-16T220153.201.json
+
+###
+
+PATCH http://localhost:8080/View-All
+Content-Type: application/json
+Content-Length: 66
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "solo",
+  "title": "view",
+  "status": "PENDING"
+}
+
+<> 2024-04-16T220110.200.json
+
+###
+
+PATCH http://localhost:8080/Mark-Task
+Content-Type: application/json
+Content-Length: 68
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "solo",
+  "title": "coding",
+  "status": "PENDING"
+}
+
+<> 2024-04-16T220044.200.json
+
+###
+
+PATCH http://localhost:8080/Mark-Task
+Content-Type: application/json
+Content-Length: 68
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "solo",
+  "title": "coding",
+  "status": "PENDING"
+}
+
+<> 2024-04-16T220042.200.json
+
+###
+
+PATCH http://localhost:8080/Mark-Task
+Content-Type: application/json
+Content-Length: 68
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "solo",
+  "title": "coding",
+  "status": "PENDING"
+}
+
+<> 2024-04-16T220026.200.json
+
+###
+
