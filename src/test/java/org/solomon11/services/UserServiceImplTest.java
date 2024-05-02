@@ -39,6 +39,7 @@ public class UserServiceImplTest {
     private  LogoutRequest logoutRequest;
     private StartTaskRequest startTaskRequest;
     private ViewAllPendingTaskRequest viewAllPendingTaskRequest;
+    private AssignTaskRequest assignTaskRequest;
 
     @BeforeEach
     public void setUp(){
@@ -81,6 +82,11 @@ public class UserServiceImplTest {
         startTaskRequest = new StartTaskRequest();
         startTaskRequest.setUsername("username");
         startTaskRequest.setTitle("title");
+
+        assignTaskRequest = new AssignTaskRequest();
+        assignTaskRequest.setUsername("username");
+        assignTaskRequest.setTitle("title");
+        assignTaskRequest.setAssignee("assignee");
 
 
 
@@ -373,6 +379,15 @@ public class UserServiceImplTest {
         loginRequest.setUsername("username");
         loginRequest.setPassword("password");
         userService.login(loginRequest);
+        todolistRequest = new TodolistRequest();
+        todolistRequest.setUsername(registerRequest.getUsername());
+        todolistRequest.setTitle("title");
+        userService.createTodolist(todolistRequest);
+        todolistRequest = new TodolistRequest();
+        assignTaskRequest = new AssignTaskRequest();
+        assignTaskRequest.setUsername(registerRequest.getUsername());
+        assignTaskRequest.setTitle("title");
+        assignTaskRequest.setAssignee("assignee");
 
 
 
