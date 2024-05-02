@@ -90,6 +90,7 @@ public class UserServiceImplTest {
 
 
 
+
     }
 
     @Test
@@ -370,26 +371,37 @@ public class UserServiceImplTest {
     public void testUserCan_AssignTask_to_A_User(){
         registerRequest = new RegisterRequest();
         registerRequest.setFirstName("Solomon");
-        registerRequest.setUsername("username");
+        registerRequest.setUsername("username1");
         registerRequest.setPassword("password");
         userService.register(registerRequest);
 
-        assertThat(users.count(), is(1L));
+        registerRequest = new RegisterRequest();
+        registerRequest.setFirstName("Banjo");
+        registerRequest.setUsername("username2");
+        registerRequest.setPassword("password");
+        userService.register(registerRequest);
+
+        assertThat(users.count(), is(2L));
         loginRequest = new LoginRequest();
-        loginRequest.setUsername("username");
+        loginRequest.setUsername("username1");
         loginRequest.setPassword("password");
         userService.login(loginRequest);
         todolistRequest = new TodolistRequest();
-        todolistRequest.setUsername(registerRequest.getUsername());
-        todolistRequest.setTitle("title");
+        todolistRequest.setUsername("username1");
+        todolistRequest.setTitle("titles");
         userService.createTodolist(todolistRequest);
-        todolistRequest = new TodolistRequest();
-        assignTaskRequest = new AssignTaskRequest();
-        assignTaskRequest.setUsername(registerRequest.getUsername());
-        assignTaskRequest.setTitle("title");
-        assignTaskRequest.setAssignee("assignee");
-        userService.assignTask(assignTaskRequest);
 
+        assignTaskRequest = new AssignTaskRequest();
+        assignTaskRequest.setUsername("username1");
+        assignTaskRequest.setTitle("titles");
+        assignTaskRequest.setAssignee("username2");
+        userService.assignTask(assignTaskRequest);
+        var user2TodoLists = users.findByUsername("user2");
+        assertThat(user2TodoLists.getTodoList().size(), is(1));
+        TodoList assignedTask = user2TodoLists.getTodoList().getFirst();
+        assertThat(assignedTask.getTitle(), is("titles"));
+        assertThat(assignedTask.getStatus(), is(TaskStatus.PENDING));
+        assertThat(assignedTask.getAuthor(), is("user1"));
 
 
     }

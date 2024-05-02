@@ -13,6 +13,7 @@ public class TodoList {
     private String id;
     private String title;
     private TaskStatus status;
+    private String author;
     private LocalDateTime dateCreated = LocalDateTime.now();
     private LocalDateTime dateUpdated = LocalDateTime.now();
     private LocalDateTime startTime = LocalDateTime.now();

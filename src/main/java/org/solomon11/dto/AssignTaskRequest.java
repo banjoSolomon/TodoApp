@@ -7,6 +7,7 @@ public class AssignTaskRequest {
     private String username;
     private String title;
     private String assignee;
+    private String author;
 
 
 }

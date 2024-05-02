@@ -99,12 +99,30 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void assignTask(AssignTaskRequest assignTaskRequest) {
-        validateAuthentication();
-        User foundUser = findUserBy(assignTaskRequest.getUsername());
-        TodoList foundTodoList = findUserTaskBy(assignTaskRequest.getUsername(), foundUser);
-        foundTodoList.setStatus(TaskStatus.IN_PROGRESS);
-        users.save(foundUser);
+        User assigningUser = users.findByUsername(assignTaskRequest.getUsername());
+        if (assigningUser == null) {
+            throw new UsernameNotFoundException("Assigning user not found");
+        }
+        TodoList todoList = findTodoListByTitleAndAuthor(assignTaskRequest.getTitle(), assignTaskRequest.getUsername());
+        if (todoList == null) {
+            throw new TaskNotFound("Task not found for assignment");
+        }
+        User assigneeUser = users.findByUsername(assignTaskRequest.getAssignee());
+        if (assigneeUser == null) {
+            throw new UsernameNotFoundException("Assignee user not found");
+        }
+        todoList.setAuthor(assigneeUser.getUsername());
 
+        users.save(assigningUser);
+    }
+
+    private TodoList findTodoListByTitleAndAuthor(String title, String username) {
+        for (TodoList todoList : authenticatedUser.getTodoList()) {
+            if (todoList.getTitle().equals(title) && todoList.getAuthor().equals(username)) {
+                return todoList;
+            }
+        }
+        return null;
     }
 
 
