@@ -72,12 +72,10 @@ public class UserServiceImpl implements UserService {
                 taskToStart = todoList;
                 break;
             }
-
         }
         if (taskToStart == null) {
             throw new TaskNotFound("Task not found");
         }
-
 
         taskToStart.setStatus(TaskStatus.IN_PROGRESS);
 
@@ -85,8 +83,19 @@ public class UserServiceImpl implements UserService {
         return startTaskResponseMap(taskToStart);
     }
 
+    @Override
+    public List<TodoList> viewAllPendingTasks(ViewAllPendingTaskRequest viewAllPendingTaskRequest) {
+        validateAuthentication();
+        User foundUser = findUserBy(viewAllPendingTaskRequest.getUsername());
+        List<TodoList> todoLists = new ArrayList<>();
+        for (TodoList todoList : foundUser.getTodoList()) {
+            if (todoList.getStatus().equals(TaskStatus.PENDING)) {
+                todoLists.add(todoList);
+            }
+        }
+        return todoLists;
 
-
+    }
 
 
     private void validateAuthentication() {

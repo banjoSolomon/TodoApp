@@ -83,10 +83,10 @@ public class UserController {
         }
     }
 
-    @PatchMapping("/Mark-Task-As-Priority")
-    public ResponseEntity<?> markTaskAsPriority(@RequestBody MarkTaskPriorityRequest markTaskPriorityRequest) {
+    @PatchMapping("/Start-task")
+    public ResponseEntity<?> markTaskAsPriority(@RequestBody StartTaskRequest startTaskRequest) {
         try {
-            var result = users.markTaskAsPriority(markTaskPriorityRequest);
+            var result = users.startTask(startTaskRequest);
             return new ResponseEntity<>(new ApiResponse(true, result), OK);
         }
         catch (Exception e) {

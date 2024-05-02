@@ -1,3 +1,213 @@
+PATCH http://localhost:8080/View-All
+Content-Type: application/json
+Content-Length: 44
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "bless",
+  "title": "view"
+}
+
+<> 2024-05-02T101744.200.json
+
+###
+
+PATCH http://localhost:8080/Start-task
+Content-Type: application/json
+Content-Length: 49
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "bless",
+  "title": "semicolon"
+}
+
+<> 2024-05-02T101713.200.json
+
+###
+
+PATCH http://localhost:8080/Start-task
+Content-Type: application/json
+Content-Length: 49
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "bless",
+  "title": "semicolon"
+}
+
+<> 2024-05-02T101710.200.json
+
+###
+
+PATCH http://localhost:8080/Start-task
+Content-Type: application/json
+Content-Length: 49
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "bless",
+  "title": "semicolon"
+}
+
+<> 2024-05-02T101658.200.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 45
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "bless",
+  "title": "house"
+}
+
+<> 2024-05-02T101620.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 44
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "bless",
+  "title": "shop"
+}
+
+<> 2024-05-02T101611.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 49
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "bless",
+  "title": "semicolon"
+}
+
+<> 2024-05-02T101552.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 49
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "bless",
+  "title": "semicolon"
+}
+
+<> 2024-05-02T101546.201.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 46
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "bless",
+  "password": "123"
+}
+
+<> 2024-05-02T101516.200.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 46
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "bless",
+  "password": "123"
+}
+
+<> 2024-05-02T101513.200.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 46
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "bless",
+  "password": "123"
+}
+
+<> 2024-05-02T101510.200.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 70
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "banjo",
+  "username": "bless",
+  "password": "123"
+}
+
+<> 2024-05-02T101448.400.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 70
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "banjo",
+  "username": "bless",
+  "password": "123"
+}
+
+<> 2024-05-02T101441.201.json
+
+###
+
 PATCH http://localhost:8080/todo_list
 Content-Type: application/json
 Content-Length: 47
@@ -608,226 +818,6 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 }
 
 <> 2024-04-16T220506.400.json
-
-###
-
-PATCH http://localhost:8080/View-All
-Content-Type: application/json
-Content-Length: 70
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "solo",
-  "title": "view all",
-  "status": "PENDING"
-}
-
-<> 2024-04-16T220451.200.json
-
-###
-
-PATCH http://localhost:8080/View-All
-Content-Type: application/json
-Content-Length: 71
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "banjo",
-  "title": "view all",
-  "status": "PENDING"
-}
-
-<> 2024-04-16T220436.200.json
-
-###
-
-PATCH http://localhost:8080/Mark-Task
-Content-Type: application/json
-Content-Length: 72
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "banjo",
-  "title": "semicolon",
-  "status": "PENDING"
-}
-
-<> 2024-04-16T220358.200.json
-
-###
-
-PATCH http://localhost:8080/Mark-Task
-Content-Type: application/json
-Content-Length: 77
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "banjo",
-  "title": "view mark task",
-  "status": "PENDING"
-}
-
-<> 2024-04-16T220341.400.json
-
-###
-
-PATCH http://localhost:8080/todo_list
-Content-Type: application/json
-Content-Length: 70
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "banjo",
-  "title": "chelsea",
-  "status": "PENDING"
-}
-
-<> 2024-04-16T220305.201.json
-
-###
-
-PATCH http://localhost:8080/todo_list
-Content-Type: application/json
-Content-Length: 69
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "banjo",
-  "title": "gaming",
-  "status": "PENDING"
-}
-
-<> 2024-04-16T220254.201.json
-
-###
-
-PATCH http://localhost:8080/todo_list
-Content-Type: application/json
-Content-Length: 72
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "banjo",
-  "title": "semicolon",
-  "status": "PENDING"
-}
-
-<> 2024-04-16T220243.201.json
-
-###
-
-POST http://localhost:8080/login
-Content-Type: application/json
-Content-Length: 46
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "banjo",
-  "password": "123"
-}
-
-<> 2024-04-16T220213.200.json
-
-###
-
-POST http://localhost:8080/register
-Content-Type: application/json
-Content-Length: 69
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "hsdh",
-  "username": "banjo",
-  "password": "123"
-}
-
-<> 2024-04-16T220153.201.json
-
-###
-
-PATCH http://localhost:8080/View-All
-Content-Type: application/json
-Content-Length: 66
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "solo",
-  "title": "view",
-  "status": "PENDING"
-}
-
-<> 2024-04-16T220110.200.json
-
-###
-
-PATCH http://localhost:8080/Mark-Task
-Content-Type: application/json
-Content-Length: 68
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "solo",
-  "title": "coding",
-  "status": "PENDING"
-}
-
-<> 2024-04-16T220044.200.json
-
-###
-
-PATCH http://localhost:8080/Mark-Task
-Content-Type: application/json
-Content-Length: 68
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "solo",
-  "title": "coding",
-  "status": "PENDING"
-}
-
-<> 2024-04-16T220042.200.json
-
-###
-
-PATCH http://localhost:8080/Mark-Task
-Content-Type: application/json
-Content-Length: 68
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "solo",
-  "title": "coding",
-  "status": "PENDING"
-}
-
-<> 2024-04-16T220026.200.json
 
 ###
 

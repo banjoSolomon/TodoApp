@@ -8,14 +8,20 @@ import org.solomon11.exceptions.UserExistsException;
 import org.solomon11.exceptions.UsernameNotFoundException;
 import org.solomon11.models.TaskStatus;
 import org.solomon11.models.TodoList;
+import org.solomon11.models.User;
 import org.solomon11.repository.Users;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.notNullValue;
 import static org.hamcrest.core.Is.is;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
 public class UserServiceImplTest {
@@ -30,13 +36,14 @@ public class UserServiceImplTest {
     private EditTodolistRequest editTodolistRequest;
     private DeleteTodolistRequest deleteTodolistRequest;
     private MarkTaskRequest markTaskRequest;
-    private  MarkTaskPriorityRequest markTaskPriorityRequest;
     private  LogoutRequest logoutRequest;
     private StartTaskRequest startTaskRequest;
+    private ViewAllPendingTaskRequest viewAllPendingTaskRequest;
 
     @BeforeEach
     public void setUp(){
         users.deleteAll();
+
         registerRequest = new RegisterRequest();
         registerRequest.setFirstName("Solomon");
         registerRequest.setUsername("username");
@@ -64,10 +71,9 @@ public class UserServiceImplTest {
         markTaskRequest.setTitle("title");
         markTaskRequest.setStatus(TaskStatus.SUCCESS);
 
-        markTaskPriorityRequest = new MarkTaskPriorityRequest();
-        markTaskPriorityRequest.setUsername("username");
-        markTaskPriorityRequest.setTitle("title");
-        markTaskPriorityRequest.setStatus(TaskStatus.PRIORITY);
+        viewAllPendingTaskRequest = new ViewAllPendingTaskRequest();
+        viewAllPendingTaskRequest.setUsername("username");
+
 
         logoutRequest = new LogoutRequest();
         logoutRequest.setUsername("username");
@@ -75,6 +81,8 @@ public class UserServiceImplTest {
         startTaskRequest = new StartTaskRequest();
         startTaskRequest.setUsername("username");
         startTaskRequest.setTitle("title");
+
+
 
     }
 
@@ -230,7 +238,33 @@ public class UserServiceImplTest {
 
     @Test
     public void testToViewAllPendingTask(){
+        registerRequest = new RegisterRequest();
+        registerRequest.setFirstName("Solomon");
+        registerRequest.setUsername("username");
+        registerRequest.setPassword("password");
+        userService.register(registerRequest);
 
+        assertThat(users.count(), is(1L));
+        loginRequest = new LoginRequest();
+        loginRequest.setUsername("username");
+        loginRequest.setPassword("password");
+        userService.login(loginRequest);
+        todolistRequest = new TodolistRequest();
+        todolistRequest.setUsername("username");
+        todolistRequest.setTitle("title");
+        userService.createTodolist(todolistRequest);
+        todolistRequest = new TodolistRequest();
+        todolistRequest.setUsername("username");
+        todolistRequest.setTitle("title");
+        userService.createTodolist(todolistRequest);
+        viewAllPendingTaskRequest = new ViewAllPendingTaskRequest();
+        viewAllPendingTaskRequest.setUsername(registerRequest.getUsername());
+        List<TodoList> pendingTasks = userService.viewAllPendingTasks(viewAllPendingTaskRequest);
+        assertEquals(2, pendingTasks.size());
+        for (TodoList task : pendingTasks) {
+            assertEquals(TaskStatus.PENDING, task.getStatus());
+            assertTrue(task.getTitle().startsWith("title"));
+        }
     }
 
     @Test

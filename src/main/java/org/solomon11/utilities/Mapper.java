@@ -72,12 +72,6 @@ public class Mapper {
         return todoList2;
     }
 
-    public static TodoList checkMapTaskPriority(MarkTaskPriorityRequest markTaskPriorityRequest) {
-        TodoList todoList1 = new TodoList();
-        todoList1.setTitle(markTaskPriorityRequest.getTitle());
-        todoList1.setStatus(markTaskPriorityRequest.getStatus());
-        return todoList1;
-    }
 
     public static TodoList map(EditTodolistRequest editPostRequest, TodoList todoList) {
         todoList.setTitle(editPostRequest.getTitle());
