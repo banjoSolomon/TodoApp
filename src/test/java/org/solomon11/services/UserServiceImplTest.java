@@ -362,6 +362,18 @@ public class UserServiceImplTest {
 
     @Test
     public void testUserCan_AssignTask_to_A_User(){
+        registerRequest = new RegisterRequest();
+        registerRequest.setFirstName("Solomon");
+        registerRequest.setUsername("username");
+        registerRequest.setPassword("password");
+        userService.register(registerRequest);
+
+        assertThat(users.count(), is(1L));
+        loginRequest = new LoginRequest();
+        loginRequest.setUsername("username");
+        loginRequest.setPassword("password");
+        userService.login(loginRequest);
+
 
 
     }
