@@ -388,6 +388,7 @@ public class UserServiceImplTest {
         assignTaskRequest.setUsername(registerRequest.getUsername());
         assignTaskRequest.setTitle("title");
         assignTaskRequest.setAssignee("assignee");
+        userService.assignTask(assignTaskRequest);
 
 
 

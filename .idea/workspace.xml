@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="996c441a-502e-469d-9d52-0a0ba631b7c3" name="Changes" comment="todolist" />
+    <list default="true" id="996c441a-502e-469d-9d52-0a0ba631b7c3" name="Changes" comment="todolist">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/solomon11/services/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/solomon11/services/UserServiceImplTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,6 +194,7 @@
     "JUnit.UserServiceImplTest.testUserCanLogoutWithCorrect_Password.executor": "Run",
     "JUnit.UserServiceImplTest.testUserCanRegister.executor": "Run",
     "JUnit.UserServiceImplTest.testUserCanUpdateTodoList.executor": "Run",
+    "JUnit.UserServiceImplTest.testUserCan_AssignTask_to_A_User.executor": "Run",
     "JUnit.UserServiceImplTest.testUserCan_StartTask.executor": "Run",
     "JUnit.UserServiceImplTest.testUserCan_ViewAllTOdoList.executor": "Run",
     "JUnit.UserServiceImplTest.testUserCannotRegisterTwice.executor": "Run",
@@ -229,11 +234,8 @@
       <recent name="org.solomon11.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceImplTest">
+  <component name="RunManager" selected="JUnit.UserServiceImplTest.testUserCan_AssignTask_to_A_User">
     <configuration name="generated-requests | #253" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="253" requestIdentifier="#253" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #254" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="254" requestIdentifier="#254" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #255" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="255" requestIdentifier="#255" runType="Run single request">
@@ -257,13 +259,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceImplTest.testUserCan_AssignTask_to_A_User" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thisTodoList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.solomon11.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.solomon11.services" />
+      <option name="MAIN_CLASS_NAME" value="org.solomon11.services.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="testUserCan_AssignTask_to_A_User" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceImplTest.testUserCan_AssignTask_to_A_User" />
         <item itemvalue="JUnit.UserServiceImplTest" />
         <item itemvalue="HTTP Request.generated-requests | #256" />
         <item itemvalue="HTTP Request.generated-requests | #255" />
         <item itemvalue="HTTP Request.generated-requests | #253" />
-        <item itemvalue="HTTP Request.generated-requests | #254" />
       </list>
     </recent_temporary>
   </component>
@@ -317,7 +335,7 @@
       <workItem from="1714085208293" duration="1247000" />
       <workItem from="1714416009931" duration="14411000" />
       <workItem from="1714479068384" duration="10943000" />
-      <workItem from="1714662886945" duration="4071000" />
+      <workItem from="1714662886945" duration="5354000" />
     </task>
     <task id="LOCAL-00001" summary="todolist">
       <option name="closed" value="true" />
@@ -391,7 +409,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714666974275</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="todolist">
+      <option name="closed" value="true" />
+      <created>1714667468838</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714667468839</updated>
+    </task>
+    <task id="LOCAL-00011" summary="todolist">
+      <option name="closed" value="true" />
+      <created>1714667989506</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714667989506</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -97,6 +97,16 @@ public class UserServiceImpl implements UserService {
 
     }
 
+    @Override
+    public void assignTask(AssignTaskRequest assignTaskRequest) {
+        validateAuthentication();
+        User foundUser = findUserBy(assignTaskRequest.getUsername());
+        TodoList foundTodoList = findUserTaskBy(assignTaskRequest.getUsername(), foundUser);
+        foundTodoList.setStatus(TaskStatus.IN_PROGRESS);
+        users.save(foundUser);
+
+    }
+
 
     private void validateAuthentication() {
         if (authenticatedUser == null)
