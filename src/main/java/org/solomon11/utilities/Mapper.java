@@ -73,6 +73,7 @@ public class Mapper {
     }
 
 
+
     public static TodoList map(EditTodolistRequest editPostRequest, TodoList todoList) {
         todoList.setTitle(editPostRequest.getTitle());
         todoList.setStatus(editPostRequest.getStatus());
@@ -103,6 +104,16 @@ public class Mapper {
         todoListResponse.setDateCreated(DateTimeFormatter
                 .ofPattern("dd/MMM/yyyy 'at' HH:mm:ss a").format(todoList.getDateCreated()));
         return todoListResponse;
+    }
+
+    public static ViewAllPendingTaskResponse mapPendingTasks(TodoList todoList) {
+        ViewAllPendingTaskResponse pendingTaskResponse = new ViewAllPendingTaskResponse();
+        pendingTaskResponse.setListId(todoList.getId());
+        pendingTaskResponse.setTitle(todoList.getTitle());
+        pendingTaskResponse.setStatus(todoList.getStatus());
+        pendingTaskResponse.setDateCreated(DateTimeFormatter
+                .ofPattern("dd/MMM/yyyy 'at' HH:mm:ss a").format(todoList.getDateCreated()));
+        return pendingTaskResponse;
 
 
     }

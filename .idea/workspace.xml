@@ -5,26 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996c441a-502e-469d-9d52-0a0ba631b7c3" name="Changes" comment="todolist">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-16T220026.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-16T220042.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-16T220044.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-16T220110.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-16T220153.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-16T220213.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-16T220243.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-16T220254.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-16T220305.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-16T220341.400.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-16T220358.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-16T220436.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-16T220451.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/response/ViewAllPendingTaskResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/ViewAllPendingTaskResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/utilities/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/utilities/Mapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/solomon11/services/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/solomon11/services/UserServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,7 +307,7 @@
       <workItem from="1714085208293" duration="1247000" />
       <workItem from="1714416009931" duration="14411000" />
       <workItem from="1714479068384" duration="10943000" />
-      <workItem from="1714662886945" duration="1138000" />
+      <workItem from="1714662886945" duration="2289000" />
     </task>
     <task id="LOCAL-00001" summary="todolist">
       <option name="closed" value="true" />
@@ -372,7 +357,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714603678670</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="todolist">
+      <option name="closed" value="true" />
+      <created>1714664301157</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714664301157</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

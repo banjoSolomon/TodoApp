@@ -108,10 +108,21 @@ public class UserServiceImpl implements UserService {
     public TodoListResponse createTodolist(TodolistRequest todolistRequest) {
         validateAuthentication();
         User foundUser = findUserBy(todolistRequest.getUsername());
+        if (taskExistsForUser(foundUser, todolistRequest.getTitle()))
+            throw new TaskExistsException("Task already exists");
         TodoList newTodoList = todoListService.createTodoListWith(todolistRequest);
         foundUser.getTodoList().add(newTodoList);
         users.save(foundUser);
         return mapCreateTodoListResponseWith(newTodoList);
+    }
+
+    private boolean taskExistsForUser(User foundUser, String title) {
+        for (TodoList todoList : foundUser.getTodoList()) {
+            if (todoList.getTitle().equals(title)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override

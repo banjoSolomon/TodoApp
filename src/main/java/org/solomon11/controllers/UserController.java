@@ -72,6 +72,17 @@ public class UserController {
         }
     }
 
+    @PatchMapping("/View-All-PendingTask")
+    public ResponseEntity<?> viewAllTodoList(@RequestBody ViewAllPendingTaskRequest viewAllPendingTaskRequest) {
+        try {
+            var result = users.viewAllPendingTasks(viewAllPendingTaskRequest);
+            return new ResponseEntity<>(new ApiResponse(true, result), OK);
+        }
+        catch (Exception e) {
+            return new ResponseEntity<>(new ApiResponse(false, e.getMessage()), BAD_REQUEST);
+        }
+    }
+
     @PatchMapping("/Mark-Task")
     public ResponseEntity<?> markTaskStatus(@RequestBody MarkTaskRequest markTaskRequest) {
         try {
