@@ -6,5 +6,5 @@ import org.solomon11.models.TaskStatus;
 public class MarkTaskRequest {
     private String username;
     private String title;
-    private TaskStatus status;
+
 }

@@ -63,7 +63,6 @@ public class Mapper {
     public static TodoList checkMapTask(MarkTaskRequest markTaskRequest) {
         TodoList todoList1 = new TodoList();
         todoList1.setTitle(markTaskRequest.getTitle());
-        todoList1.setStatus(markTaskRequest.getStatus());
         return todoList1;
     }
     public static TodoList checkMapStartTask(StartTaskRequest startTaskRequest) {
@@ -106,17 +105,17 @@ public class Mapper {
         return todoListResponse;
     }
 
-    public static ViewAllPendingTaskResponse mapPendingTasks(TodoList todoList) {
-        ViewAllPendingTaskResponse pendingTaskResponse = new ViewAllPendingTaskResponse();
-        pendingTaskResponse.setListId(todoList.getId());
-        pendingTaskResponse.setTitle(todoList.getTitle());
-        pendingTaskResponse.setStatus(todoList.getStatus());
-        pendingTaskResponse.setDateCreated(DateTimeFormatter
-                .ofPattern("dd/MMM/yyyy 'at' HH:mm:ss a").format(todoList.getDateCreated()));
-        return pendingTaskResponse;
-
-
-    }
+//    public static ViewAllPendingTaskResponse mapPendingTasks(TodoList todoList) {
+//        ViewAllPendingTaskResponse pendingTaskResponse = new ViewAllPendingTaskResponse();
+//        pendingTaskResponse.setListId(todoList.getId());
+//        pendingTaskResponse.setTitle(todoList.getTitle());
+//        pendingTaskResponse.setStatus(todoList.getStatus());
+//        pendingTaskResponse.setDateCreated(DateTimeFormatter
+//                .ofPattern("dd/MMM/yyyy 'at' HH:mm:ss a").format(todoList.getDateCreated()));
+//        return pendingTaskResponse;
+//
+//
+//   }
 
     public static MarkTaskResponse mapMarkTaskResponse(TodoList todoList) {
         MarkTaskResponse markTaskResponse = new MarkTaskResponse();

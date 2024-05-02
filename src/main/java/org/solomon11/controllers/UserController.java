@@ -95,7 +95,7 @@ public class UserController {
     }
 
     @PatchMapping("/Start-task")
-    public ResponseEntity<?> markTaskAsPriority(@RequestBody StartTaskRequest startTaskRequest) {
+    public ResponseEntity<?> startTask(@RequestBody StartTaskRequest startTaskRequest) {
         try {
             var result = users.startTask(startTaskRequest);
             return new ResponseEntity<>(new ApiResponse(true, result), OK);

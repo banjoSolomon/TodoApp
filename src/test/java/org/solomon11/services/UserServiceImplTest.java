@@ -69,7 +69,7 @@ public class UserServiceImplTest {
         markTaskRequest = new MarkTaskRequest();
         markTaskRequest.setUsername("username");
         markTaskRequest.setTitle("title");
-        markTaskRequest.setStatus(TaskStatus.SUCCESS);
+
 
         viewAllPendingTaskRequest = new ViewAllPendingTaskRequest();
         viewAllPendingTaskRequest.setUsername("username");
@@ -255,7 +255,7 @@ public class UserServiceImplTest {
         userService.createTodolist(todolistRequest);
         todolistRequest = new TodolistRequest();
         todolistRequest.setUsername("username");
-        todolistRequest.setTitle("title");
+        todolistRequest.setTitle("title1");
         userService.createTodolist(todolistRequest);
         viewAllPendingTaskRequest = new ViewAllPendingTaskRequest();
         viewAllPendingTaskRequest.setUsername(registerRequest.getUsername());
@@ -350,7 +350,6 @@ public class UserServiceImplTest {
         markTaskRequest = new MarkTaskRequest();
         markTaskRequest.setUsername(registerRequest.getUsername());
         markTaskRequest.setTitle("title");
-        markTaskRequest.setStatus(TaskStatus.SUCCESS);
         userService.markTaskStatus(markTaskRequest);
         var updateUserAfterMarking = users.findByUsername(registerRequest.getUsername());
         assertThat(updateUserAfterMarking.getTodoList().size(), is(1));
@@ -358,6 +357,11 @@ public class UserServiceImplTest {
         TodoList updatedTodoList = updateUserAfterMarking.getTodoList().getFirst();
         assertThat(updatedTodoList.getTitle(), is("title"));
         assertThat(updatedTodoList.getStatus(), is(TaskStatus.SUCCESS));
+
+    }
+
+    @Test
+    public void testUserCan_AssignTask_to_A_User(){
 
 
     }
