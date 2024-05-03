@@ -98,7 +98,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void assignTask(AssignTaskRequest assignTaskRequest) {
+    public AssignTaskResponse assignTask(AssignTaskRequest assignTaskRequest) {
         validateAuthentication();
         String assignerUsername = assignTaskRequest.getAuthor();
         String assigneeUsername = assignTaskRequest.getUsername();
@@ -120,6 +120,7 @@ public class UserServiceImpl implements UserService {
         assignee.getTodoList().add(newTask);
 
         users.save(assignee);
+        return  mapAssignTaskResponseWith(newTask);
 
 
     }

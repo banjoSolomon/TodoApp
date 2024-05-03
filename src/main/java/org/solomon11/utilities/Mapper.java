@@ -96,6 +96,16 @@ public class Mapper {
         return todolistUserResponse;
     }
 
+    public static AssignTaskResponse mapAssignTaskResponseWith(TodoList todoList) {
+        AssignTaskResponse assignTaskResponse = new AssignTaskResponse();
+        assignTaskResponse.setListId(todoList.getId());
+        assignTaskResponse.setTitle(todoList.getTitle());
+        assignTaskResponse.setStatus(todoList.getStatus());
+        assignTaskResponse.setDateUpdated(DateTimeFormatter
+                .ofPattern("dd/MMM/yyyy 'at' HH:mm:ss a").format(todoList.getDateUpdated()));
+        return assignTaskResponse;
+    }
+
     public static DeleteTodoListResponse mapDeleteTodolistResponseWith(TodoList todoList) {
         DeleteTodoListResponse deletePostResponse = new DeleteTodoListResponse();
         deletePostResponse.setListId(todoList.getId());
