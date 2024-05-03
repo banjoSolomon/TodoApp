@@ -102,25 +102,14 @@ public class UserServiceImpl implements UserService {
         validateAuthentication();
         String assignerUsername = assignTaskRequest.getAuthor();
         String assigneeUsername = assignTaskRequest.getUsername();
+        User assigner = findUserBy(assignerUsername);
+        User assignee = findUserBy(assigneeUsername);
 
-        User assigner = users.findByUsername(assignerUsername);
-        if (assigner == null) {
-            throw new UsernameNotFoundException("Assigner username not found: " + assignerUsername);
-        }
-
-        User assignee = users.findByUsername(assigneeUsername);
-        if (assignee == null) {
-            throw new UsernameNotFoundException("Assignee username not found: " + assigneeUsername);
-        }
-
-        TodoList newTask = new TodoList();
-        newTask.setTitle(assignTaskRequest.getTitle());
-        newTask.setStatus(TaskStatus.PENDING);
-        newTask.setAuthor(assignerUsername);
-        assignee.getTodoList().add(newTask);
-
+        TodoList assignedTask = todoListService.assignTask(assignTaskRequest);
+        assignee.getTodoList().add(assignedTask);
         users.save(assignee);
-        return  mapAssignTaskResponseWith(newTask);
+
+        return mapAssignTaskResponseWith(assignedTask);
 
 
     }

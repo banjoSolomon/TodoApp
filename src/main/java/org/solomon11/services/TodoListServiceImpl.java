@@ -1,6 +1,7 @@
 package org.solomon11.services;
 
 import org.solomon11.dto.*;
+import org.solomon11.models.TaskStatus;
 import org.solomon11.models.TodoList;
 import org.solomon11.repository.TodoListsRepository;
 import org.solomon11.response.DeleteTodoListResponse;
@@ -56,8 +57,12 @@ public class TodoListServiceImpl implements TodoListService{
 
     @Override
     public TodoList assignTask(AssignTaskRequest assignTaskRequest) {
-        TodoList todoList = checkMapAssignTask(assignTaskRequest);
-        return todoListsRepository.save(todoList);
+        TodoList newTask = new TodoList();
+        newTask.setTitle(assignTaskRequest.getTitle());
+        newTask.setStatus(TaskStatus.PENDING);
+        newTask.setAuthor(assignTaskRequest.getAuthor());
+        return todoListsRepository.save(newTask);
+
 
     }
 

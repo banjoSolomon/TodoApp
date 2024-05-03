@@ -42,6 +42,27 @@ public class UserController {
         }
     }
 
+    @PatchMapping("/todo_list")
+    public ResponseEntity<?> createTodolist(@RequestBody AssignTaskRequest assignTaskRequest) {
+        try {
+            var result = users.assignTask(assignTaskRequest);
+            return new ResponseEntity<>(new ApiResponse(true, result), CREATED);
+        } catch (Exception e) {
+            return new ResponseEntity<>(new ApiResponse(false, e.getMessage()), BAD_REQUEST);
+        }
+    }
+
+    @PatchMapping("/Start-task")
+    public ResponseEntity<?> startTask(@RequestBody StartTaskRequest startTaskRequest) {
+        try {
+            var result = users.startTask(startTaskRequest);
+            return new ResponseEntity<>(new ApiResponse(true, result), OK);
+        }
+        catch (Exception e) {
+            return new ResponseEntity<>(new ApiResponse(false, e.getMessage()), BAD_REQUEST);
+        }
+    }
+
     @PatchMapping("/edit_todolist")
     public ResponseEntity<?> editTodoList(@RequestBody EditTodolistRequest editTodolistRequest) {
         try {
@@ -94,16 +115,7 @@ public class UserController {
         }
     }
 
-    @PatchMapping("/Start-task")
-    public ResponseEntity<?> startTask(@RequestBody StartTaskRequest startTaskRequest) {
-        try {
-            var result = users.startTask(startTaskRequest);
-            return new ResponseEntity<>(new ApiResponse(true, result), OK);
-        }
-        catch (Exception e) {
-            return new ResponseEntity<>(new ApiResponse(false, e.getMessage()), BAD_REQUEST);
-        }
-    }
+
     @PostMapping("/logout")
     public ResponseEntity<?> logout(@RequestBody LogoutRequest logoutRequest) {
         try {

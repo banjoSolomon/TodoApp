@@ -375,7 +375,6 @@ public class UserServiceImplTest {
         registerRequest.setPassword("password");
         userService.register(registerRequest);
 
-        // Register user2 (assignee)
         registerRequest = new RegisterRequest();
         registerRequest.setFirstName("Banjo");
         registerRequest.setUsername("username2");

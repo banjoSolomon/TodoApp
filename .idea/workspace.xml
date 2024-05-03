@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996c441a-502e-469d-9d52-0a0ba631b7c3" name="Changes" comment="todolist">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/AssignTaskResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/utilities/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/utilities/Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/solomon11/services/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/solomon11/services/UserServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +234,7 @@
       <recent name="org.solomon11.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceImplTest.testUserCan_AssignTask_to_A_User">
+  <component name="RunManager" selected="JUnit.UserServiceImplTest">
     <configuration name="generated-requests | #253" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="253" requestIdentifier="#253" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -279,8 +277,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceImplTest.testUserCan_AssignTask_to_A_User" />
         <item itemvalue="JUnit.UserServiceImplTest" />
+        <item itemvalue="JUnit.UserServiceImplTest.testUserCan_AssignTask_to_A_User" />
         <item itemvalue="HTTP Request.generated-requests | #256" />
         <item itemvalue="HTTP Request.generated-requests | #255" />
         <item itemvalue="HTTP Request.generated-requests | #253" />
@@ -338,7 +336,7 @@
       <workItem from="1714416009931" duration="14411000" />
       <workItem from="1714479068384" duration="10943000" />
       <workItem from="1714662886945" duration="7890000" />
-      <workItem from="1714688016446" duration="14294000" />
+      <workItem from="1714688016446" duration="14719000" />
     </task>
     <task id="LOCAL-00001" summary="todolist">
       <option name="closed" value="true" />
@@ -452,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714749708711</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="todolist">
+      <option name="closed" value="true" />
+      <created>1714750924660</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1714750924660</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
