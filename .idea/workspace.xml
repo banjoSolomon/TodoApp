@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996c441a-502e-469d-9d52-0a0ba631b7c3" name="Changes" comment="todolist">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/solomon11/services/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/solomon11/services/UserServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-20T083815.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-20T083822.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-20T083844.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-20T084515.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-20T084534.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-20T084603.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-20T084631.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-04-30T062916.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/controllers/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +132,9 @@
     "HTTP Request.generated-requests | #254.executor": "Run",
     "HTTP Request.generated-requests | #255.executor": "Run",
     "HTTP Request.generated-requests | #256.executor": "Run",
+    "HTTP Request.generated-requests | #257.executor": "Run",
+    "HTTP Request.generated-requests | #258.executor": "Run",
+    "HTTP Request.generated-requests | #259.executor": "Run",
     "HTTP Request.generated-requests | #26.executor": "Run",
     "HTTP Request.generated-requests | #29.executor": "Run",
     "HTTP Request.generated-requests | #3.executor": "Run",
@@ -234,14 +245,14 @@
       <recent name="org.solomon11.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceImplTest">
-    <configuration name="generated-requests | #253" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="253" requestIdentifier="#253" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.generated-requests | #259">
+    <configuration name="generated-requests | #257" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="257" requestIdentifier="#257" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #255" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="255" requestIdentifier="#255" runType="Run single request">
+    <configuration name="generated-requests | #258" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="258" requestIdentifier="#258" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #256" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="256" requestIdentifier="#256" runType="Run single request">
+    <configuration name="generated-requests | #259" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="259" requestIdentifier="#259" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -259,29 +270,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImplTest.testUserCan_AssignTask_to_A_User" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="thisTodoList" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.solomon11.Main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.solomon11.services.*" />
+          <option name="PATTERN" value="org.solomon11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.solomon11.services" />
-      <option name="MAIN_CLASS_NAME" value="org.solomon11.services.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="testUserCan_AssignTask_to_A_User" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #259" />
+        <item itemvalue="HTTP Request.generated-requests | #258" />
+        <item itemvalue="HTTP Request.generated-requests | #257" />
+        <item itemvalue="Spring Boot.Main" />
         <item itemvalue="JUnit.UserServiceImplTest" />
-        <item itemvalue="JUnit.UserServiceImplTest.testUserCan_AssignTask_to_A_User" />
-        <item itemvalue="HTTP Request.generated-requests | #256" />
-        <item itemvalue="HTTP Request.generated-requests | #255" />
-        <item itemvalue="HTTP Request.generated-requests | #253" />
       </list>
     </recent_temporary>
   </component>
@@ -336,7 +344,7 @@
       <workItem from="1714416009931" duration="14411000" />
       <workItem from="1714479068384" duration="10943000" />
       <workItem from="1714662886945" duration="7890000" />
-      <workItem from="1714688016446" duration="14719000" />
+      <workItem from="1714688016446" duration="16149000" />
     </task>
     <task id="LOCAL-00001" summary="todolist">
       <option name="closed" value="true" />
@@ -458,7 +466,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714750924660</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="todolist">
+      <option name="closed" value="true" />
+      <created>1714751662718</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1714751662718</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

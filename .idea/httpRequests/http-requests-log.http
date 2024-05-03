@@ -1,5 +1,202 @@
 PATCH http://localhost:8080/View-All
 Content-Type: application/json
+Content-Length: 43
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "alex",
+  "title": "view"
+}
+
+<> 2024-05-03T171542.200.json
+
+###
+
+PATCH http://localhost:8080/View-All
+Content-Type: application/json
+Content-Length: 46
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "solomon",
+  "title": "view"
+}
+
+<> 2024-05-03T171455.200.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 48
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "solomon",
+  "password": "123"
+}
+
+<> 2024-05-03T171423.200.json
+
+###
+
+PATCH http://localhost:8080/assign-task
+Content-Type: application/json
+Content-Length: 89
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "solomon",
+  "title": "music",
+  "author": "alex",
+  "assignee": "alex"
+}
+
+<> 2024-05-03T171334.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 47
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "alex",
+  "title": "football"
+}
+
+<> 2024-05-03T171147.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 44
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "alex",
+  "title": "music"
+}
+
+<> 2024-05-03T171137.201.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 45
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "alex",
+  "title": "school"
+}
+
+<> 2024-05-03T171127.400.json
+
+###
+
+PATCH http://localhost:8080/todo_list
+Content-Type: application/json
+Content-Length: 45
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "alex",
+  "title": "school"
+}
+
+<> 2024-05-03T171119.201.json
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+Content-Length: 45
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "alex",
+  "password": "123"
+}
+
+<> 2024-05-03T171050.200.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 72
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "banjo",
+  "username": "solomon",
+  "password": "123"
+}
+
+<> 2024-05-03T171026.201.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 69
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "banjo",
+  "username": "alex",
+  "password": "123"
+}
+
+<> 2024-05-03T170959.400.json
+
+###
+
+POST http://localhost:8080/register
+Content-Type: application/json
+Content-Length: 69
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "firstName": "banjo",
+  "username": "alex",
+  "password": "123"
+}
+
+<> 2024-05-03T170927.201.json
+
+###
+
+PATCH http://localhost:8080/View-All
+Content-Type: application/json
 Content-Length: 46
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
 Accept-Encoding: br, deflate, gzip, x-gzip
@@ -607,205 +804,6 @@ Accept: */*
 }
 
 <> 2024-05-02T101510.200.json
-
-###
-
-POST http://localhost:8080/register
-Content-Type: application/json
-Content-Length: 70
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "firstName": "banjo",
-  "username": "bless",
-  "password": "123"
-}
-
-<> 2024-05-02T101448.400.json
-
-###
-
-POST http://localhost:8080/register
-Content-Type: application/json
-Content-Length: 70
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "firstName": "banjo",
-  "username": "bless",
-  "password": "123"
-}
-
-<> 2024-05-02T101441.201.json
-
-###
-
-PATCH http://localhost:8080/todo_list
-Content-Type: application/json
-Content-Length: 47
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "username": "bee",
-  "title": "semicolon"
-}
-
-<> 2024-04-30T063003.201.json
-
-###
-
-POST http://localhost:8080/login
-Content-Type: application/json
-Content-Length: 44
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "username": "bee",
-  "password": "123"
-}
-
-<> 2024-04-30T062937.200.json
-
-###
-
-POST http://localhost:8080/register
-Content-Type: application/json
-Content-Length: 66
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-{
-  "firstName": "sam",
-  "username": "bee",
-  "password": "123"
-}
-
-<> 2024-04-30T062916.201.json
-
-###
-
-PATCH http://localhost:8080/todo_list
-Content-Type: application/json
-Content-Length: 68
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "users",
-  "title": "check",
-  "status": "PENDING"
-}
-
-<> 2024-04-20T084631.201.json
-
-###
-
-POST http://localhost:8080/login
-Content-Type: application/json
-Content-Length: 46
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "users",
-  "password": "123"
-}
-
-<> 2024-04-20T084603.200.json
-
-###
-
-POST http://localhost:8080/register
-Content-Type: application/json
-Content-Length: 70
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "banjo",
-  "username": "users",
-  "password": "123"
-}
-
-<> 2024-04-20T084534.201.json
-
-###
-
-POST http://localhost:8080/register
-Content-Type: application/json
-Content-Length: 74
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "firstName": "banjo",
-  "username": "users",
-  "password": "123",
-
-}
-
-<> 2024-04-20T084515.400.json
-
-###
-
-PATCH http://localhost:8080/todo_list
-Content-Type: application/json
-Content-Length: 44
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "user",
-  "title": "check"
-}
-
-<> 2024-04-20T083844.201.json
-
-###
-
-POST http://localhost:8080/login
-Content-Type: application/json
-Content-Length: 45
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "user",
-  "password": "123"
-}
-
-<> 2024-04-20T083822.200.json
-
-###
-
-POST http://localhost:8080/login
-Content-Type: application/json
-Content-Length: 45
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "username": "user",
-  "password": "123"
-}
-
-<> 2024-04-20T083815.200.json
 
 ###
 

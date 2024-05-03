@@ -42,8 +42,8 @@ public class UserController {
         }
     }
 
-    @PatchMapping("/todo_list")
-    public ResponseEntity<?> createTodolist(@RequestBody AssignTaskRequest assignTaskRequest) {
+    @PatchMapping("/assign-task")
+    public ResponseEntity<?> assignTask(@RequestBody AssignTaskRequest assignTaskRequest) {
         try {
             var result = users.assignTask(assignTaskRequest);
             return new ResponseEntity<>(new ApiResponse(true, result), CREATED);
@@ -94,7 +94,7 @@ public class UserController {
     }
 
     @PatchMapping("/View-All-PendingTask")
-    public ResponseEntity<?> viewAllTodoList(@RequestBody ViewAllPendingTaskRequest viewAllPendingTaskRequest) {
+    public ResponseEntity<?> viewAllPendingTask(@RequestBody ViewAllPendingTaskRequest viewAllPendingTaskRequest) {
         try {
             var result = users.viewAllPendingTasks(viewAllPendingTaskRequest);
             return new ResponseEntity<>(new ApiResponse(true, result), OK);
