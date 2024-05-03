@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "title": "school",
+      "status": "PENDING",
+      "listId": "66350ca7d361c934b43461b0",
+      "dateCreated": "03/May/2024 at 17:11:19 PM"
+    },
+    {
+      "title": "music",
+      "status": "PENDING",
+      "listId": "66350cb9d361c934b43461b1",
+      "dateCreated": "03/May/2024 at 17:11:37 PM"
+    },
+    {
+      "title": "football",
+      "status": "PENDING",
+      "listId": "66350cc3d361c934b43461b2",
+      "dateCreated": "03/May/2024 at 17:11:47 PM"
+    }
+  ],
+  "successful": true
+}

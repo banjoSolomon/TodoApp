@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "title": "semicolon",
+      "status": "SUCCESS",
+      "listId": "6633bade078462704ad709d1",
+      "dateCreated": "02/May/2024 at 17:10:05 PM"
+    },
+    {
+      "title": "sport",
+      "status": "IN_PROGRESS",
+      "listId": "6633baed078462704ad709d2",
+      "dateCreated": "02/May/2024 at 17:10:21 PM"
+    },
+    {
+      "title": "house",
+      "status": "PENDING",
+      "listId": "6633baf5078462704ad709d3",
+      "dateCreated": "02/May/2024 at 17:10:29 PM"
+    }
+  ],
+  "successful": true
+}
