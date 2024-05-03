@@ -63,24 +63,26 @@ public class UserServiceImpl implements UserService {
     public StartTaskResponse startTask(StartTaskRequest startTaskRequest) {
         validateAuthentication();
         String username = startTaskRequest.getUsername();
-       String title = startTaskRequest.getTitle();
-        User foundUser = findUserBy(startTaskRequest.getUsername());
-        TodoList newTodoList = todoListService.startTaskWith(startTaskRequest);
+        String title = startTaskRequest.getTitle();
+        User foundUser = findUserBy(username);
+        TodoList newTask = todoListService.startTaskWith(startTaskRequest);
+        TodoList taskToStart = findTaskByTitle(foundUser, title);
+        taskToStart.setStatus(TaskStatus.IN_PROGRESS);
+        users.save(foundUser);
+
+        return startTaskResponseMap(taskToStart);
+
+    }
+
+    private TodoList findTaskByTitle(User foundUser, String title) {
         TodoList taskToStart = null;
-        for(TodoList todoList : foundUser.getTodoList()) {
-            if(todoList.getTitle().equals(title)) {
+        for (TodoList todoList : foundUser.getTodoList()) {
+            if (todoList.getTitle().equals(title)) {
                 taskToStart = todoList;
                 break;
             }
         }
-        if (taskToStart == null) {
-            throw new TaskNotFound("Task not found");
-        }
-
-        taskToStart.setStatus(TaskStatus.IN_PROGRESS);
-
-        users.save(foundUser);
-        return startTaskResponseMap(taskToStart);
+        return taskToStart;
     }
 
     @Override

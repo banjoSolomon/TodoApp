@@ -65,18 +65,12 @@ public class Mapper {
         todoList1.setTitle(markTaskRequest.getTitle());
         return todoList1;
     }
-    public static TodoList checkMapAssignTask(AssignTaskRequest markTaskRequest) {
-        TodoList todoLists = new TodoList();
-        todoLists.setTitle(markTaskRequest.getTitle());
-        todoLists.setAuthor(markTaskRequest.getUsername());
-        todoLists.setStatus(TaskStatus.PENDING);
-        return todoLists;
-    }
-    public static TodoList checkMapStartTask(StartTaskRequest startTaskRequest) {
-        TodoList todoList2 = new TodoList();
-        todoList2.setTitle(startTaskRequest.getTitle());
-        return todoList2;
-    }
+
+//    public static TodoList checkMapStartTask(StartTaskRequest startTaskRequest) {
+//        TodoList todoList2 = new TodoList();
+//        todoList2.setTitle(startTaskRequest.getTitle());
+//        return todoList2;
+//    }
 
 
 

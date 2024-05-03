@@ -3,6 +3,7 @@ package org.solomon11.services;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.solomon11.dto.*;
+import org.solomon11.exceptions.InvalidLoginException;
 import org.solomon11.exceptions.InvalidUsernameOrPassword;
 import org.solomon11.exceptions.UserExistsException;
 import org.solomon11.exceptions.UsernameNotFoundException;
@@ -20,8 +21,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.notNullValue;
 import static org.hamcrest.core.Is.is;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 public class UserServiceImplTest {
@@ -409,11 +409,7 @@ public class UserServiceImplTest {
         assertThat(assignedTask.getStatus(), is(TaskStatus.PENDING));
         assertThat(assignedTask.getAuthor(), is("username1"));
 
-
     }
-
-
-
 
     @Test
     public void testUserCanLogout() {

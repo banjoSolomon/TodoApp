@@ -50,8 +50,11 @@ public class TodoListServiceImpl implements TodoListService{
 
     @Override
     public TodoList startTaskWith(StartTaskRequest startTaskRequest) {
-        TodoList todoList = checkMapStartTask(startTaskRequest);
-        return todoListsRepository.save(todoList);
+        TodoList newTask = new TodoList();
+        newTask.setTitle(startTaskRequest.getTitle());
+        newTask.setStatus(TaskStatus.PENDING);
+        newTask.setAuthor(startTaskRequest.getUsername());
+        return todoListsRepository.save(newTask);
 
     }
 
