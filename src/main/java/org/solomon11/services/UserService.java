@@ -28,7 +28,7 @@ public interface UserService {
 
     List<TodoList> viewAllPendingTasks(ViewAllPendingTaskRequest viewAllPendingTaskRequest);
 
-
     void assignTask(AssignTaskRequest assignTaskRequest);
 }
+
 

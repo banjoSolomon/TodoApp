@@ -99,30 +99,29 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void assignTask(AssignTaskRequest assignTaskRequest) {
-        User assigningUser = users.findByUsername(assignTaskRequest.getUsername());
-        if (assigningUser == null) {
-            throw new UsernameNotFoundException("Assigning user not found");
-        }
-        TodoList todoList = findTodoListByTitleAndAuthor(assignTaskRequest.getTitle(), assignTaskRequest.getUsername());
-        if (todoList == null) {
-            throw new TaskNotFound("Task not found for assignment");
-        }
-        User assigneeUser = users.findByUsername(assignTaskRequest.getAssignee());
-        if (assigneeUser == null) {
-            throw new UsernameNotFoundException("Assignee user not found");
-        }
-        todoList.setAuthor(assigneeUser.getUsername());
+        validateAuthentication();
+        String assignerUsername = assignTaskRequest.getAuthor();
+        String assigneeUsername = assignTaskRequest.getUsername();
 
-        users.save(assigningUser);
-    }
-
-    private TodoList findTodoListByTitleAndAuthor(String title, String username) {
-        for (TodoList todoList : authenticatedUser.getTodoList()) {
-            if (todoList.getTitle().equals(title) && todoList.getAuthor().equals(username)) {
-                return todoList;
-            }
+        User assigner = users.findByUsername(assignerUsername);
+        if (assigner == null) {
+            throw new UsernameNotFoundException("Assigner username not found: " + assignerUsername);
         }
-        return null;
+
+        User assignee = users.findByUsername(assigneeUsername);
+        if (assignee == null) {
+            throw new UsernameNotFoundException("Assignee username not found: " + assigneeUsername);
+        }
+
+        TodoList newTask = new TodoList();
+        newTask.setTitle(assignTaskRequest.getTitle());
+        newTask.setStatus(TaskStatus.PENDING);
+        newTask.setAuthor(assignerUsername);
+        assignee.getTodoList().add(newTask);
+
+        users.save(assignee);
+
+
     }
 
 

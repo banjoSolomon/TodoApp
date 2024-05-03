@@ -54,8 +54,12 @@ public class TodoListServiceImpl implements TodoListService{
 
     }
 
+    @Override
+    public TodoList assignTask(AssignTaskRequest assignTaskRequest) {
+        TodoList todoList = checkMapAssignTask(assignTaskRequest);
+        return todoListsRepository.save(todoList);
 
-
+    }
 
 
 }

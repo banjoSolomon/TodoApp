@@ -84,9 +84,9 @@ public class UserServiceImplTest {
         startTaskRequest.setTitle("title");
 
         assignTaskRequest = new AssignTaskRequest();
-        assignTaskRequest.setUsername("username");
-        assignTaskRequest.setTitle("title");
-        assignTaskRequest.setAssignee("assignee");
+        assignTaskRequest.setUsername("username2");
+        assignTaskRequest.setTitle("titles");
+        assignTaskRequest.setAuthor("username1");
 
 
 
@@ -368,43 +368,51 @@ public class UserServiceImplTest {
     }
 
     @Test
-    public void testUserCan_AssignTask_to_A_User(){
+    public void testUserCan_AssignTask_to_A_User() {
         registerRequest = new RegisterRequest();
         registerRequest.setFirstName("Solomon");
         registerRequest.setUsername("username1");
         registerRequest.setPassword("password");
         userService.register(registerRequest);
 
+        // Register user2 (assignee)
         registerRequest = new RegisterRequest();
         registerRequest.setFirstName("Banjo");
         registerRequest.setUsername("username2");
-        registerRequest.setPassword("password");
+        registerRequest.setPassword("pass");
         userService.register(registerRequest);
 
         assertThat(users.count(), is(2L));
+
         loginRequest = new LoginRequest();
         loginRequest.setUsername("username1");
         loginRequest.setPassword("password");
         userService.login(loginRequest);
+
         todolistRequest = new TodolistRequest();
         todolistRequest.setUsername("username1");
-        todolistRequest.setTitle("titles");
+        todolistRequest.setTitle("title");
         userService.createTodolist(todolistRequest);
 
         assignTaskRequest = new AssignTaskRequest();
-        assignTaskRequest.setUsername("username1");
-        assignTaskRequest.setTitle("titles");
-        assignTaskRequest.setAssignee("username2");
+        assignTaskRequest.setUsername("username2");
+        assignTaskRequest.setTitle("title");
+        assignTaskRequest.setAuthor("username1");
         userService.assignTask(assignTaskRequest);
-        var user2TodoLists = users.findByUsername("user2");
-        assertThat(user2TodoLists.getTodoList().size(), is(1));
-        TodoList assignedTask = user2TodoLists.getTodoList().getFirst();
-        assertThat(assignedTask.getTitle(), is("titles"));
+
+        User user2 = users.findByUsername("username2");
+        assertThat(user2, notNullValue());
+        List<TodoList> todoListsUser2 = user2.getTodoList();
+        assertThat(todoListsUser2.size(), is(1));
+
+        TodoList assignedTask = todoListsUser2.getFirst();
+        assertThat(assignedTask.getTitle(), is("title"));
         assertThat(assignedTask.getStatus(), is(TaskStatus.PENDING));
-        assertThat(assignedTask.getAuthor(), is("user1"));
+        assertThat(assignedTask.getAuthor(), is("username1"));
 
 
     }
+
 
 
 

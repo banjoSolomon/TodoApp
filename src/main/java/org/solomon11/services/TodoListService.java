@@ -17,5 +17,6 @@ public interface TodoListService {
     TodoList startTaskWith(StartTaskRequest startTaskRequest);
 
 
+    TodoList assignTask(AssignTaskRequest assignTaskRequest);
 }
 
