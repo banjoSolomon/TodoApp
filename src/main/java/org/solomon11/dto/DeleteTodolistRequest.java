@@ -6,4 +6,5 @@ import lombok.Data;
 public class DeleteTodolistRequest {
     private String author;
     private String listId;
+
 }

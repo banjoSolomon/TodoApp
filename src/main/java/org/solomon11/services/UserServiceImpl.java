@@ -105,7 +105,7 @@ public class UserServiceImpl implements UserService {
         String assignerUsername = assignTaskRequest.getAuthor();
         String assigneeUsername = assignTaskRequest.getUsername();
         User assigner = findUserBy(assignerUsername);
-        User assignee = findUserBy(assigneeUsername);
+       User assignee = findUserBy(assigneeUsername);
 
         TodoList assignedTask = todoListService.assignTask(assignTaskRequest);
         assignee.getTodoList().add(assignedTask);
@@ -176,6 +176,7 @@ public class UserServiceImpl implements UserService {
             todoListResponses.add(todoListResponse);
         }
         return todoListResponses;
+        
     }
 
     @Override

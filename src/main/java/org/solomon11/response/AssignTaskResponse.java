@@ -8,7 +8,6 @@ public class AssignTaskResponse {
     private String title;
     private String listId;
     private TaskStatus status;
-    private String assignee;
     private String dateUpdated;
 
 }

@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import static org.springframework.http.HttpStatus.*;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class UserController {
     @Autowired
     private UserService users;
