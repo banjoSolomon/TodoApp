@@ -2,6 +2,7 @@ package org.solomon11.services;
 
 import org.solomon11.dto.*;
 import org.solomon11.models.TodoList;
+import org.solomon11.models.User;
 import org.solomon11.response.*;
 
 import java.util.List;
@@ -29,6 +30,8 @@ public interface UserService {
     List<TodoList> viewAllPendingTasks(ViewAllPendingTaskRequest viewAllPendingTaskRequest);
 
     AssignTaskResponse assignTask(AssignTaskRequest assignTaskRequest);
+
+    User getUserByUsername(String username);
 }
 
 

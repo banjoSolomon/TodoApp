@@ -116,6 +116,11 @@ public class UserServiceImpl implements UserService {
 
     }
 
+    @Override
+    public User getUserByUsername(String username) {
+        return users.findByUsername(username);
+    }
+
 
     private void validateAuthentication() {
         if (authenticatedUser == null)

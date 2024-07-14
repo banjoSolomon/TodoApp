@@ -11,6 +11,7 @@ import static org.springframework.http.HttpStatus.*;
 
 @RestController
 @CrossOrigin(origins = "*")
+@RequestMapping("/api/v1/todo")
 public class UserController {
     @Autowired
     private UserService users;

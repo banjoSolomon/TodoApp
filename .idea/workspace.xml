@@ -5,10 +5,76 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="996c441a-502e-469d-9d52-0a0ba631b7c3" name="Changes" comment="todolist">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/BaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/security/config/BeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/security/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/security/filters/CustomAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/security/filters/CustomUsernamePasswordAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/security/manager/CustomAuthenticationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/security/models/SecureUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/security/providers/CustomAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/security/services/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/security/utils/SecurityUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/solomon11/controller/AuthenticationControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T101510.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T101513.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T101516.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T101546.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T101552.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T101611.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T101620.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T101658.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T101710.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T101713.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T101744.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T165806.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T165845.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T165853.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T165911.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T165917.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T165944.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T165949.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T170002.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T170016.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T170028.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T170055.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T170149.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T170155.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T170200.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T170238.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T170307.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T170441.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T170917.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T170940.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T171006.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T171021.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T171029.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T171104.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T171147.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T171205.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T171230.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-02T171327.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-03T170927.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-03T170959.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-03T171026.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-03T171050.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-03T171119.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-03T171127.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-03T171137.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-03T171147.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-03T171334.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-03T171423.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-03T171455.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2024-05-03T171542.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/TodoListServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/response/LoginUserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/response/LoginUserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/services/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/solomon11/utilities/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/solomon11/utilities/Mapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/solomon11/services/UserServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/solomon11/services/UserServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +200,36 @@
     "HTTP Request.generated-requests | #261.executor": "Run",
     "HTTP Request.generated-requests | #262.executor": "Run",
     "HTTP Request.generated-requests | #263.executor": "Run",
+    "HTTP Request.generated-requests | #264.executor": "Run",
+    "HTTP Request.generated-requests | #265.executor": "Run",
+    "HTTP Request.generated-requests | #266.executor": "Run",
+    "HTTP Request.generated-requests | #267.executor": "Run",
+    "HTTP Request.generated-requests | #268.executor": "Run",
+    "HTTP Request.generated-requests | #269.executor": "Run",
+    "HTTP Request.generated-requests | #270.executor": "Run",
+    "HTTP Request.generated-requests | #271.executor": "Run",
+    "HTTP Request.generated-requests | #272.executor": "Run",
+    "HTTP Request.generated-requests | #273.executor": "Run",
+    "HTTP Request.generated-requests | #274.executor": "Run",
+    "HTTP Request.generated-requests | #275.executor": "Run",
+    "HTTP Request.generated-requests | #276.executor": "Run",
+    "HTTP Request.generated-requests | #277.executor": "Run",
+    "HTTP Request.generated-requests | #278.executor": "Run",
+    "HTTP Request.generated-requests | #279.executor": "Run",
+    "HTTP Request.generated-requests | #280.executor": "Run",
+    "HTTP Request.generated-requests | #281.executor": "Run",
+    "HTTP Request.generated-requests | #282.executor": "Run",
+    "HTTP Request.generated-requests | #283.executor": "Run",
+    "HTTP Request.generated-requests | #284.executor": "Run",
+    "HTTP Request.generated-requests | #285.executor": "Run",
+    "HTTP Request.generated-requests | #286.executor": "Run",
+    "HTTP Request.generated-requests | #287.executor": "Run",
+    "HTTP Request.generated-requests | #288.executor": "Run",
+    "HTTP Request.generated-requests | #289.executor": "Run",
     "HTTP Request.generated-requests | #29.executor": "Run",
+    "HTTP Request.generated-requests | #290.executor": "Run",
+    "HTTP Request.generated-requests | #292.executor": "Run",
+    "HTTP Request.generated-requests | #293.executor": "Run",
     "HTTP Request.generated-requests | #3.executor": "Run",
     "HTTP Request.generated-requests | #35.executor": "Run",
     "HTTP Request.generated-requests | #36.executor": "Run",
@@ -188,6 +283,8 @@
     "HTTP Request.generated-requests | #92.executor": "Run",
     "HTTP Request.generated-requests | #93.executor": "Run",
     "HTTP Request.generated-requests | #94.executor": "Run",
+    "JUnit.AuthenticationControllerTest.authenticateUserTest.executor": "Run",
+    "JUnit.AuthenticationControllerTest.executor": "Run",
     "JUnit.UserServiceImplTest.UserCan_MarkTaskAsPriority.executor": "Run",
     "JUnit.UserServiceImplTest.executor": "Run",
     "JUnit.UserServiceImplTest.loginNonExistentUser_throwsExceptionTest.executor": "Run",
@@ -221,6 +318,7 @@
     "Spring Boot.Main.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "ignore.virus.scanning.warn.message": "true",
@@ -244,32 +342,39 @@
       <recent name="org.solomon11.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceImplTest">
-    <configuration name="generated-requests | #261" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="261" requestIdentifier="#261" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #262" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="262" requestIdentifier="#262" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #263" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="263" requestIdentifier="#263" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AuthenticationControllerTest.authenticateUserTest">
+    <configuration name="AuthenticationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="thisTodoList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.solomon11.services.*" />
+          <option name="PATTERN" value="org.solomon11.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.solomon11.services" />
-      <option name="MAIN_CLASS_NAME" value="org.solomon11.services.UserServiceImplTest" />
+      <option name="PACKAGE_NAME" value="org.solomon11.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.solomon11.controller.AuthenticationControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImplTest.userCanNotAccessOtherUserTasks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AuthenticationControllerTest.authenticateUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thisTodoList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.solomon11.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.solomon11.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.solomon11.controller.AuthenticationControllerTest" />
+      <option name="METHOD_NAME" value="authenticateUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.testUserCanDeleteTodoList_ListIsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="thisTodoList" />
       <extension name="coverage">
         <pattern>
@@ -279,19 +384,48 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.solomon11.services" />
       <option name="MAIN_CLASS_NAME" value="org.solomon11.services.UserServiceImplTest" />
-      <option name="METHOD_NAME" value="userCanNotAccessOtherUserTasks" />
+      <option name="METHOD_NAME" value="testUserCanDeleteTodoList_ListIsZero" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceImplTest.testUserCanLogout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="thisTodoList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.solomon11.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.solomon11.services" />
+      <option name="MAIN_CLASS_NAME" value="org.solomon11.services.UserServiceImplTest" />
+      <option name="METHOD_NAME" value="testUserCanLogout" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="thisTodoList" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.solomon11.Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.solomon11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceImplTest" />
-        <item itemvalue="JUnit.UserServiceImplTest.userCanNotAccessOtherUserTasks" />
-        <item itemvalue="HTTP Request.generated-requests | #263" />
-        <item itemvalue="HTTP Request.generated-requests | #262" />
-        <item itemvalue="HTTP Request.generated-requests | #261" />
+        <item itemvalue="JUnit.AuthenticationControllerTest.authenticateUserTest" />
+        <item itemvalue="JUnit.AuthenticationControllerTest" />
+        <item itemvalue="Spring Boot.Main" />
+        <item itemvalue="JUnit.UserServiceImplTest.testUserCanLogout" />
+        <item itemvalue="JUnit.UserServiceImplTest.testUserCanDeleteTodoList_ListIsZero" />
       </list>
     </recent_temporary>
   </component>
@@ -346,7 +480,21 @@
       <workItem from="1714416009931" duration="14411000" />
       <workItem from="1714479068384" duration="10943000" />
       <workItem from="1714662886945" duration="7890000" />
-      <workItem from="1714688016446" duration="18698000" />
+      <workItem from="1714688016446" duration="41095000" />
+      <workItem from="1715153313692" duration="902000" />
+      <workItem from="1715171690720" duration="22401000" />
+      <workItem from="1715324727068" duration="2313000" />
+      <workItem from="1715336019825" duration="2360000" />
+      <workItem from="1715503826787" duration="44000" />
+      <workItem from="1715763387348" duration="3432000" />
+      <workItem from="1716020845706" duration="1195000" />
+      <workItem from="1716275326462" duration="2658000" />
+      <workItem from="1716300919704" duration="38000" />
+      <workItem from="1716539165351" duration="9256000" />
+      <workItem from="1716629783786" duration="1895000" />
+      <workItem from="1716739749511" duration="14339000" />
+      <workItem from="1720889561024" duration="3340000" />
+      <workItem from="1720963926212" duration="10008000" />
     </task>
     <task id="LOCAL-00001" summary="todolist">
       <option name="closed" value="true" />
@@ -492,7 +640,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714753039784</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="todolist">
+      <option name="closed" value="true" />
+      <created>1714755407418</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1714755407418</updated>
+    </task>
+    <task id="LOCAL-00020" summary="todolist">
+      <option name="closed" value="true" />
+      <created>1715327867841</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1715327867841</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

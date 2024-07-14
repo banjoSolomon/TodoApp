@@ -412,6 +412,11 @@ public class UserServiceImplTest {
     }
 
     @Test
+    public void testCreateTaskSendEmail(){
+
+    }
+
+    @Test
     public void testUserCanLogout() {
         registerRequest = new RegisterRequest();
         registerRequest.setFirstName("Solomon");
